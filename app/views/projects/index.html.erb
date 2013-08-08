@@ -1,0 +1,41 @@
+
+
+            <div class="col-lg-8 main_content">
+              <div class="col-lg-11">
+                          <h3>cPro</h3>
+                          <h2>Your Projects.</h2>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <input type="search" class="form-control" placeholder="Find it quick...">
+                            </div>
+                          </div>
+                          <br/>
+                          <table class="table table-hover table-condensed">
+                            <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Status<th>
+                                  <th>Category</th>
+                                  <th>Description</th>
+                                  <th></th>
+                                  <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr><% current_user.projects.each do |project|  %>
+                                  <td><%= link_to " #{project.project_name}", project%></td>
+                                  <td>A<td>
+                                  <td><%= "#{project.project_category}" %></td>
+                                  <td> <%= truncate("#{project.project_description}", length: 125) %></td>
+                                  <td><%= link_to "Edit", edit_project_path(project.id)%><td>
+                                  <td><%= link_to "Delete", project, method: :delete %></td>
+                                </tr>  
+								<% end %>
+							    </tbody>
+                              </table>
+
+              </div>
+          </div>
+                <!-- /.col-lg-9 -->
+
+                

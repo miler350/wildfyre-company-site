@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130807143520) do
+ActiveRecord::Schema.define(version: 20130807232626) do
 
   create_table "contacts", force: true do |t|
     t.datetime "created_at"
@@ -21,7 +21,25 @@ ActiveRecord::Schema.define(version: 20130807143520) do
   create_table "projects", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "project_name"
+    t.text     "project_description"
+    t.string   "project_category"
+    t.text     "project_special_requests"
+    t.integer  "project_budget"
+    t.text     "project_budget_explanation"
+    t.string   "project_start"
+    t.string   "project_git"
   end
+
+  create_table "relationships", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "project_id"
+  end
+
+  add_index "relationships", ["project_id"], name: "index_relationships_on_project_id", using: :btree
+  add_index "relationships", ["user_id"], name: "index_relationships_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -36,6 +54,8 @@ ActiveRecord::Schema.define(version: 20130807143520) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "role"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

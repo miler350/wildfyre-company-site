@@ -8,8 +8,19 @@
     <a class="navbar-brand" href="index.html">WILDFYRE</a>
     <div class="nav-collapse collapse">
       <ul class="nav navbar-nav pull-right">
-        <li><a href="#contact">Hey, Khadijah</a></li>
+        <li><% if user_signed_in? %>
+			<%= link_to "Hey, #{current_user.name}",new_user_session_path %>
+			<% else %>
+			<%= link_to "Sign in", new_user_session_path %>
+			<% end %>
+		
+		
+		
+		
+		</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 </div>
+
+
