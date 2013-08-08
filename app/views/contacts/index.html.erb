@@ -1,0 +1,48 @@
+            <div class="col-lg-8 main_content">
+              <div class="col-lg-11">
+                          <h3>wf-N</h3>
+                          <h2>Your Contacts.</h2>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <input type="search" class="form-control" placeholder="Find them quick...">
+                            </div>
+                          </div>
+                          <br/>
+                          <table class="table table-hover table-condensed">
+                            <thead>
+                                <tr>
+                                  <th>First Name</th>
+                                  <th>Last Name<th>
+                                  <th>Company</th>
+                                  <th>Title</th>
+                                  <th>E-mail</th>
+                                  <th></th>
+                                  <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr><% current_user.contacts.each do |contact| %>
+                                <td><%= "#{contact.contact_first_name}" %></td>
+                                <td><%= "#{contact.contact_last_name}" %><td>
+                                <td><%= "#{contact.contact_company}" %></td>
+                                <td><%= "#{contact.contact_title}" %></td>
+                                <td><%= "#{contact.contact_personal_email}" %></td>
+                                <td><%= link_to "Edit", edit_contact_path(contact.id) %><td>
+                                <td><%= link_to "Delete", contact, method: :delete %></td>
+                              </tr>
+                               
+                              
+                            
+                              
+                               
+                               
+							  <% end %>
+                             
+                            </tbody>
+                          </table>
+
+              </div>
+          </div>
+                <!-- /.col-lg-9 -->
+
+   

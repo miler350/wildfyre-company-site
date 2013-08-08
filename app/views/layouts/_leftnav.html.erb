@@ -19,19 +19,20 @@
                     <h5>Profile</h5>
                     <ul class="nav">
                       <li><a href="#">My Profile</a></li>
-                      <li><a href="#">Edit Profile</a></li>
+                      <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
                     </ul>
                     <br/>
                     <h5>Projects.</h5>
                     <ul class="nav">
-                      <li><a href="#">Create Project</a></li>
-                      <li><a href="#">View Projects</a></li>
+					  <li><%= link_to "Create Project", new_project_path %></li>
+                      <li><%= link_to "View Projects", projects_path %></a></li>
+                      
                     </ul>
                     <br/>
                     <h5>Contacts.</h5>
                       <ul class="nav">
-                        <li><a href="#">Create Contact</a></li>
-                        <li><a href="#">View Contacts</a></li>
+						  <li><%= link_to "Create Contact", new_contact_path %></li>
+                        <li><%= link_to "View Contacts", contacts_path %></a></li>
                       </ul>
                     <br/>
                     <ul class="nav">
