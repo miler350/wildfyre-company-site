@@ -11,12 +11,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130807232626) do
+ActiveRecord::Schema.define(version: 20130808051802) do
 
   create_table "contacts", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "contact_first_name"
+    t.string   "contact_middle_name"
+    t.string   "contact_last_name"
+    t.string   "contact_company"
+    t.string   "contact_title"
+    t.string   "contact_personal_email"
+    t.string   "contact_work_email"
+    t.string   "contact_cell_phone"
+    t.string   "contact_work_phone"
+    t.string   "contact_website"
+    t.string   "contact_street_address"
+    t.string   "contact_city"
+    t.string   "contact_state"
+    t.string   "contact_zip"
+    t.string   "contact_country"
+    t.string   "contact_linkedin"
+    t.string   "contact_twitter"
+    t.string   "contact_facebook"
+    t.string   "contact_undergrad"
+    t.string   "contact_undergrad_degree"
+    t.string   "contact_grad"
+    t.string   "contact_grad_degree"
+    t.date     "contact_birthday"
+    t.integer  "contact_married"
+    t.integer  "contact_kids"
+    t.integer  "user_id"
   end
+
+  add_index "contacts", ["user_id"], name: "index_contacts_on_user_id", using: :btree
 
   create_table "projects", force: true do |t|
     t.datetime "created_at"
