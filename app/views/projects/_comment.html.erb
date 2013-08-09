@@ -1,0 +1,20 @@
+<div>
+                         <div class="media">
+                          <a class="pull-left" href="#"><br><br>
+                            <%#<img class="media-object img-circle" data-src="holder.js/64x64" src="img/headshot_cordis.jpg"> %>
+                            <h6><%= first_initial_last_name(User.find(comment.user_id).name) %></h6>
+                          </a>
+                          <div class="media-body"><br><br>
+                            <h4 class="media-heading timestamp"><%= format_created_at_with_slash(comment.created_at)%> at <%= format_time_created_at(comment.created_at.localtime)%> </h4>
+                            <%= comment.content %><br>
+						</div>
+						<% if comment.has_response? %>
+                        <div class="media">
+                         <a class="pull-left" href="#">
+                           <img class="media-object img-circle" data-src="holder.js/64x64" src="img/headshot_cordis.jpg">
+                           <h6>C. Stanfield</h6>
+                         </a>
+                         <div class="media-body">
+                           <h4 class="media-heading timestamp">8/1/13 at 1:03 AM</h4>
+                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.<% end %>
+							

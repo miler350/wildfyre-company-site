@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130808231335) do
+ActiveRecord::Schema.define(version: 20130809053803) do
+
+  create_table "comments", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "content"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.integer  "user_id"
+  end
+
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "contacts", force: true do |t|
     t.datetime "created_at"
