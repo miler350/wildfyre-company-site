@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :relationships
   has_many :projects, through: :relationships
   has_many :comments
+ 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
