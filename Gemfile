@@ -11,6 +11,7 @@ gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 gem 'devise', '3.0.0'
+gem 'acts_as_commentable_with_threading'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

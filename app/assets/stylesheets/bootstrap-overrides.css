@@ -93,7 +93,7 @@ form h5 {margin: 20px 0 20px;}
 .notes {margin-bottom: 30px;}
 .notes h5 {margin-bottom: 10px;}
 
-.profile_summary {margin-left: auto; margin-right: auto; background:}
+.profile_summary {margin-left: auto; margin-right: auto;}
 
 h5 + ul.resume-bullets {text-transform: uppercase;}
 ul.resume-bullets {margin: 30px 0;}
