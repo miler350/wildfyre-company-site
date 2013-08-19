@@ -19,13 +19,12 @@ module ApplicationHelper
       end
   end
   
-  def drop_zero(string_array)
-    array = string_array.collect { |num| Integer(num)}
-    if array.to_a.include? 0
-      new = array.to_s.sub("0","").split("").to_a
-      new[-2]
-    else
-      array
+  def drop_zero(string_array)                          # this will take 2 digits ["5","4"]
+    array = string_array.collect { |num| Integer(num)} # take an array of individual numbers in string form ie. ["4", "5", "6"], convert them to numbers [4,5,6] 
+    if array[-2] == 0                                  # is the first number of the two slots 0?
+      array[-1]                                        # if the first number is 0, just return the 2nd digit
+    else                                               # if the first digit is not zero
+      array.join                                       # [2,8].join -> 28 
     end
   end
   
@@ -41,9 +40,10 @@ module ApplicationHelper
   end
   
   def format_time_created_at(created_at)
-    date_array = created_at.to_s.split("")
-    am_or_pm = if created_at.localtime.hour < 12 then "AM" else "PM" end
-     "#{drop_zero(date_array[11,2])}:#{date_array[14,2].join} #{am_or_pm}"
+  
+    date_array = created_at.to_s.split("") # take the default created at value separate it into individual compoents into an array
+    am_or_pm = if created_at.localtime.hour < 12 then "AM" else "PM" end # there are 24 hours of the day. if the hour is less than 12, it's AM, if not, it's pm
+     "#{drop_zero(date_array[11,2])}:#{date_array[14,2].join} #{am_or_pm}" 
   end
   
   def short_url(url)
