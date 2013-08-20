@@ -15,6 +15,10 @@ class ProjectsController < ApplicationController
       @relationship = current_user.relationships.create!(user_id: current_user.id, project_id: @project_id)
       flash[:notice] = " #{@project.project_name}has been created."
       redirect_to projects_path
+    else
+      flash[:alert] = "Project has not been created."
+      flash[:error] =@project.errors.full_messages
+      render 'new'
     end
   end
   
