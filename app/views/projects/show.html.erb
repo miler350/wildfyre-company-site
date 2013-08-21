@@ -84,59 +84,9 @@
                               <h5>Project Budget</h5>
                               <div class="well well-lg"><%= @project.project_budget_explanation %></div>
                           </div>
-                          <div id="files">
-                               <div class="section-header">
-                                 <h4>Files</h4>
-                               </div>
-                               <table class="table table-hover">
-                                 <thead>
-                                   <tr>
-                                     <th>File Name</th>
-                                     <th>Date</th>
-                                     <th>Uploaded By...</th>
-                                     <th>Link</th>
-                                   </tr>
-                                 </thead>
-                                 <tbody>
-                                   <tr class="success">
-                                     <td>Mockup Website Files</td>
-                                     <td>Aug 5, 2013</td>
-                                     <td>K. Coakley</td>
-                                     <td><a href="#">Download</a></td>
-                                   </tr>
-                                   <tr class="">
-                                     <td>Rails Partial Files</td>
-                                     <td>Aug 15, 2013</td>
-                                     <td>K. Coakley</td>
-                                     <td><a href="#">Download</a></td>
-                                   </tr>
-                                   <tr class="success">
-                                     <td>Draft Logo Design Files</td>
-                                     <td>Aug 15, 2013</td>
-                                     <td>K. Coakley</td>
-                                     <td><a href="#">Download</a></td>
-                                   </tr>
-                                   <tr class="">
-                                     <td>Draft payment forms</td>
-                                     <td>Aug 15, 2013</td>
-                                     <td>K. Coakley</td>
-                                     <td><a href="#">Download</a></td>
-                                   </tr>
-                                 </tbody>
-                               </table>
-
-                               <br/>
-                              
-                               <form>
-                                 <fieldset>
-                                     <div class="form-group">
-                                     <label for="exampleInputFile">Add Project Files</label>
-                                     <input type="file" id="exampleInputFile">
-                                     <p class="help-block">(please compress all files that exceed 5MB).</p>
-                                   </div>
-                                </fieldset>
-                               </form>
-                           </div>
+						  <%= render partial: 'projects/upload', collection: @project.uploads %>
+						  
+                        
                           
 
                           <div class="section-header">
@@ -150,3 +100,8 @@
                               
   							  <%= render 'comments/form' %>
   							  <%= render partial: 'projects/comment', collection: @project.comments %> 
+							  
+							 
+							  
+							  
+							  

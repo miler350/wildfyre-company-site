@@ -66,5 +66,11 @@ module ApplicationHelper
       "PM"
     end
   end
+  
+  def short_month_dates(created_at)
+    date = created_at.to_formatted_s(:long).split(" ")
+    short_month = date.first.split("")
+    "#{short_month[0..2].join} #{date[1]} #{date[2]}"
+  end
 
 end

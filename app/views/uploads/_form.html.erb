@@ -1,0 +1,20 @@
+<%#<%= form_for([ @project , @upload ], html: { multipart: true }) do |f| %>
+ <fieldset>
+<%= form_for [ @project, @upload ] do |f| %>
+<div class="form-group">
+	<%= f.label :attachment, 'Add Project Files' %>
+    <%= f.file_field :attachment %>
+    <p class="help-block">(please compress all files that exceed 5MB).</p>
+    </div>
+
+    <div class="form-group">
+    <label for="projectDescription"> <%= f.label :name, 'File Description' %></label>
+<%= f.text_field :name, :class => "form-control", placeholder: "" %>
+</div>
+  
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>
+ </fieldset>
+

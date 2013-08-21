@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130820234128) do
+ActiveRecord::Schema.define(version: 20130821044209) do
 
   create_table "comments", force: true do |t|
     t.datetime "created_at"
@@ -88,6 +88,20 @@ ActiveRecord::Schema.define(version: 20130820234128) do
 
   add_index "relationships", ["project_id"], name: "index_relationships_on_project_id", using: :btree
   add_index "relationships", ["user_id"], name: "index_relationships_on_user_id", using: :btree
+
+  create_table "uploads", force: true do |t|
+    t.string   "name"
+    t.string   "attachment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.integer  "uploadable_id"
+    t.string   "uploadable_type"
+  end
+
+  add_index "uploads", ["project_id"], name: "index_uploads_on_project_id", using: :btree
+  add_index "uploads", ["user_id"], name: "index_uploads_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
