@@ -11,6 +11,8 @@ gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 gem 'devise', '3.0.0'
+gem 'fog',"~> 1.3.1" 
+gem 'carrierwave'
 
 
 # Use SCSS for stylesheets
