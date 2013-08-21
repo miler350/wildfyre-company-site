@@ -2,7 +2,8 @@
                          <div class="media">
                           <a class="pull-left" href="#"><br><br>
                             
-                            <h6><%= first_initial_last_name(User.find(comment.user_id).name) %><p><%= image_tag(User.find(comment.user_id).avatar.url, height: "64", width: "64", class: "img-circle") %> </p></h6>
+                            <%= image_tag(User.find(comment.user_id).avatar.url, height: "64", width: "64", class: "img-circle") %>
+							<h6><%= first_initial_last_name(User.find(comment.user_id).name) %> </h6>
                           </a>
                           <div class="media-body"><br><br>
                             <h4 class="media-heading timestamp"><%= format_created_at_with_slash(comment.created_at)%> at <%= format_time_created_at(comment.created_at.localtime)%> </h4>
