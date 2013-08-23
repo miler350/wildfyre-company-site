@@ -1,25 +1,23 @@
 class UploadsController < ApplicationController
-   before_filter :load_uploadable
   
   def index
-    @uploadable = Project.find(params[:project_id])
-    @uploads = @uploadable.uploads
+    @project = Project.find(params[:project_id])
+    @uploads = @project.uploads
   end
 
   def create
-    @upload = @uploadable.uploads.new(upload_params)
-    @upload.save
-    @upload.update_attributes(user_id: current_user.id)
-
-    redirect_to project_path(@upload.uploadable)
+     @project = Project.find(params[:project_id])    #added
+     @upload = @project.uploads.new(upload_params)
+     if @upload.save
+        @upload.update_attributes(user_id: current_user.id)
+        redirect_to projects_path
+     else
+       flash[:notice] = "File has not been uploaded."
+       redirect_to project_path(@project.uploads)
+     end
   end
   
   private
-  
-  def load_uploadable
-    resource, id = request.path.split('/')[1,2]
-    @uploadable = resource.singularize.classify.constantize.find(id)
-  end
   
   def upload_params
     params.require(:upload).permit(:name, :attachment, :user_id, :project_id)

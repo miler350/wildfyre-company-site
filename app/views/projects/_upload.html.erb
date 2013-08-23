@@ -11,35 +11,26 @@
            <th>Link</th>
          </tr>
        </thead>
-       <tbody>
-         <tr class="success">
+	   <tbody>
+           
+		   
+		   
+		   <% @project.uploads.reverse.take(5).each do |upload| %>
+		   <tr class="<%= cycle("success", "") -%>">
            <td><%= upload.name %></td>
-           <td><%= short_month_dates(upload.created_at)%></td>
+           <td><%= short_month_dates_and_recent(upload.created_at)%></td>
            <td><%= first_initial_last_name(User.find(upload.user_id).name) %></td>
-           <td><%= link_to "Download"%></td>
-         </tr>
-         <tr class="">
-           <td>Rails Partial Files</td>
-           <td>Aug 15, 2013</td>
-           <td>K. Coakley</td>
-           <td><a href="#">Download</a></td>
-         </tr>
-         <tr class="success">
-           <td>Draft Logo Design Files</td>
-           <td>Aug 15, 2013</td>
-           <td>K. Coakley</td>
-           <td><a href="#">Download</a></td>
-         </tr>
-         <tr class="">
-           <td>Draft payment forms</td>
-           <td>Aug 15, 2013</td>
-           <td>K. Coakley</td>
-           <td><a href="#">Download</a></td>
-         </tr>
+           <td><%= link_to "Download", upload.attachment_url%></td>
+		   <% end %>
+	   </tr>
        </tbody>
-     </table>
-
-     <br/>
-    
-     <%= render partial: 'uploads/form' %>
- </div>
+       </table>
+	   <tr> 
+		  <% if @project.uploads.count > 5 %>
+	      <%= link_to "View all #{@project.uploads.count} files", project_uploads_path(@project.id) %>
+	      <% end %>
+	   </tr>
+	   <br/>
+       <br/>
+	  
+	   

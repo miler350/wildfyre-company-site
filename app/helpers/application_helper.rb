@@ -67,10 +67,19 @@ module ApplicationHelper
     end
   end
   
-  def short_month_dates(created_at)
-    date = created_at.to_formatted_s(:long).split(" ")
-    short_month = date.first.split("")
-    "#{short_month[0..2].join} #{date[1]} #{date[2]}"
+  def short_month_dates_and_recent(created_at)
+    seconds_in_an_hour = 3600
+    seconds_in_a_day = 86400
+    time_elapsed = Integer(Time.now - created_at)
+    if time_elapsed < seconds_in_an_hour
+      "#{time_elapsed/60} minutes ago"
+    elsif time_elapsed < seconds_in_a_day
+      "#{time_elapsed/3600} hours ago"
+    else
+      date = created_at.to_formatted_s(:long).split(" ")
+      short_month = date.first.split("")
+      "#{short_month[0..2].join} #{date[1]} #{date[2]}"
+    end
   end
 
 end
