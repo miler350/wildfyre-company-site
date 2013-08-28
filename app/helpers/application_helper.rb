@@ -9,15 +9,16 @@ module ApplicationHelper
   end
   
   def stylish_numbers(number)
-    nums_array = number.to_s.split("")
-    if nums_array.count > 3
-      nums_array[-3,0] = "."
-      2.times do nums_array.pop end
-        "$#{nums_array.join}k"
-      else
-        "$#{number}"
+    nums_array = number.to_s.split("")                # accepts a number, converts to a string type, and then splits. ie 4200 will be ["4","2","0","0"]
+    if nums_array.count > 3                           # if the array size ie ["4","2","0","0"] is greater than 3 (in this case 4)
+      nums_array[-3,0] = "."                          # then i want access the array at the 3 digits from the end, where the comma would go - then put a period there
+      2.times do nums_array.pop end                   # pop the last two digits from the end  ie ["4",".","2"]
+        "$#{nums_array.join}k"                        # join 4.2, then add $ and k = $4.2k
+      else                                            # if the number is less than or equal to 3
+        "$#{number}"                                  # just put the number with a dollar sign
       end
   end
+  
   
   def drop_zero(string_array)                          # this will take 2 digits ["5","4"]
     array = string_array.collect { |num| Integer(num)} # take an array of individual numbers in string form ie. ["4", "5", "6"], convert them to numbers [4,5,6] 

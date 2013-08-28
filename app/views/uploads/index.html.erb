@@ -1,5 +1,38 @@
 
 
-<%# @project.uploads.each do |upload| %>
-<%# upload.name %>
-<%# end %>
+<div class="col-lg-8 main_content">
+<div id="files">
+	<h3><%= "All files for #{@project.project_name}" %></h3><br/>
+     <div class="section-header">
+       <h4>Files</h4>
+     </div>
+     <table class="table table-hover">
+       <thead>
+         <tr>
+           <th>File Name</th>
+           <th>Date</th>
+           <th>Uploaded By...</th>
+           <th>Link</th>
+         </tr>
+       </thead>
+	   <tbody>
+           
+		   
+		   
+		   <% @project.uploads.reverse.each do |upload| %>
+		   <tr class="<%= cycle("success", "") -%>">
+           <td><%= upload.name %></td>
+           <td><%= short_month_dates_and_recent(upload.created_at)%></td>
+           <td><%= first_initial_last_name(User.find(upload.user_id).name) %></td>
+           <td><%= link_to "Download", upload.attachment_url%></td>
+		   <% end %>
+	   </tr>
+       </tbody>
+       </table>
+	   <tr> 
+	      <%= link_to "Back to  #{@project.project_name}", project_path(@project.id) %>
+	   </tr>
+	   <br/>
+       <br/>
+   </div>
+	   

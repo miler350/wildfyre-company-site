@@ -39,10 +39,17 @@
     <input type="file" id="exampleInputFile">
     <p class="help-block">Please upload any super important project files (please compress all files that exceed 5MB).</p>
   </div>
+  
+  
   <div class="checkbox">
     <label>
       <input type="checkbox"> I agree to Wildfyre terms of service.
     </label>
+	
+    <div class="form-group">
+    <label for="projectDescription"> <%#= f.label "I agree" %></label>
+<%#= f.check_box "Terms of Service" %>
+</div>
   
 </div>
 <br/>
