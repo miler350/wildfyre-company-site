@@ -1,0 +1,41 @@
+
+<div class="col-lg-8 main_content">
+<div id="files">
+	<h3><%= "All notes for #{@project.project_name}" %></h3><br/>
+     <div class="section-header">
+       <h4>Notes</h4>
+     </div>
+	 <%= render partial: 'form' %>
+     <table class="table table-hover">
+       <thead>
+         <tr>
+			  <% @project.notes.reverse.each do |note| %>
+           <tr class="<%= cycle("success", "") -%>">
+		   <td width="25%"><%= "#{first_initial_last_name(User.find(note.user_id).name)}"%><br/> 
+		   <%= "#{short_month_dates_and_recent(note.created_at)}" %><br />
+		   <%#= link_to "View", project_note_path(@project,) %>
+		   <%= link_to "Delete", {controller: :notes, action: :destroy, id: note.id}, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+           <td><%= note.content %></td>
+		   
+           
+           
+           <% end %>
+         </tr>
+       </thead>
+	   <tbody>
+           
+		   
+		   
+		  
+		  
+		   
+	   </tr>
+       </tbody>
+       </table>
+	   <tr> 
+	      <%= link_to "Back to  #{@project.project_name}", project_path(@project.id) %>
+	   </tr>
+	   <br/>
+       <br/>
+   </div>
+

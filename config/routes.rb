@@ -8,6 +8,7 @@ WildfyreSite::Application.routes.draw do
   resources :projects do
     resources :comments 
     resources :uploads
+    resources :notes
   end
 
   resources :contacts

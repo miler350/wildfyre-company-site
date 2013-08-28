@@ -1,0 +1,12 @@
+<%= form_for [ @project, @note ] do |f| %>
+
+    <div class="form-group">
+    <label for="projectDescription"> <%= f.label :content, 'Add a new note' %></label>
+<%= f.text_area :content, :class => "form-control", placeholder: "Join the discussion." %>
+</div>
+  
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>
+   
