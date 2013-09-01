@@ -3,15 +3,60 @@
         <div class="col-lg-2">
             <div class="sidebar affix">
                   <aside>
+					  <% if request.path == companies_path #|| start_up_path || ventures_path || advisory_path || real_estate_path) %>
+                      <h4>wfCo</h4>
+                      <h4>Companies</h4>
+                        <ul class="nav">
+                          <li><%= link_to "Start-up Machine", start_up_path %></li>
+                          <li><%= link_to "Ventures", ventures_path %></li>
+                          <li><%= link_to "Advisory", advisory_path %></li>
+                          <li><%= link_to "Real Estate", real_estate_path %></li>
+                        </ul>
+						<% elsif request.path == projects_path %>
+                        <h4>wfcPro</h4>
+                        <h4>Projects</h4>
+                          <ul class="nav">
+                            <li><a href=#>Launched</a></li>
+                            <li><a href=#>In Development</a></li>
+                            <li><a href=#>Re-releases</a></li>
+                            <li><a href=#>Big Ideas</a></li>
+                            <li><a href=#>Domain</a></li>
+							
+                          </ul>
+						<% elsif request.path == partners_path %>
+                        <h4>wfPtns</h4>
+                        <h4>Partners</h4>
+                          <ul class="nav">
+                            <li><a href=#>Cordis S.</a></li>
+                            <li><a href=#>Khadijah C.</a></li>
+                          </ul>
+  						<% elsif request.path == network_path %>
+                          <h4>wfNtwk</h4>
+                          <h4>Network</h4>
+                            <ul class="nav">
+                              <li><a href=#>Service Providers</a></li>
+                              <li><a href=#>Get Invited</a></li>
+                            </ul>
+	  					<% elsif request.path == network_path %>
+	                       <h4>wfNtwk</h4>
+	                       <h4>Ethos</h4>
+	                         <ul class="nav">
+	                           <li><a href=#>Service Providers</a></li>
+	                           <li><a href=#>Get Invited</a></li>
+	                         </ul>    
+						<% else %>
                     <h4>wfg</h4>
                     <h4>WF Collective</h4>
                       <ul class="nav">
-                        <li><a href="wildfyre-companies.html">Companies</a></li>
-                        <li><a href="wildfyre-projects.html">Projects</a></li>
-                        <li><a href="wildfyre-partners.html">Parnters</a></li>
-                        <li><a href="wildfyre-network.html">Network</a></li>
-                        <li><a href="wildfyre-ethos.html">Ethos</a></li>
+                        <li><%= link_to "Companies", companies_path %></li>
+                        <li><%= link_to "Projects", projects_path %></li>
+                        <li><%= link_to "Partners", partners_path %></li>
+                        <li><%= link_to "Network", network_path %></li>
+                        <li><%= link_to "Ethos", ethos_path %></li>
                       </ul>
+					  <% end %>
+					  
+					  
                   </aside>
                    <aside>
 
