@@ -3,62 +3,39 @@
         <div class="col-lg-2">
             <div class="sidebar affix">
                   <aside>
-					  <% if request.path == companies_path #|| start_up_path || ventures_path || advisory_path || real_estate_path) %>
-                      <h4>wfCo</h4>
-                      <h4>Companies</h4>
-                        <ul class="nav">
-                          <li><%= link_to "Start-up Machine", start_up_path %></li>
-                          <li><%= link_to "Ventures", ventures_path %></li>
-                          <li><%= link_to "Advisory", advisory_path %></li>
-                          <li><%= link_to "Real Estate", real_estate_path %></li>
-                        </ul>
-						<% elsif request.path == projects_path %>
-                        <h4>wfcPro</h4>
-                        <h4>Projects</h4>
-                          <ul class="nav">
-                            <li><a href=#>Launched</a></li>
-                            <li><a href=#>In Development</a></li>
-                            <li><a href=#>Re-releases</a></li>
-                            <li><a href=#>Big Ideas</a></li>
-                            <li><a href=#>Domain</a></li>
+					  
+					  
+		                    <%= render partial: 'layouts/root_links' if request.path == root_path %>
+							<%= render partial: 'layouts/root_links' if request.path == ethos_path %>
+	                        
 							
-                          </ul>
-						<% elsif request.path == partners_path %>
-                        <h4>wfPtns</h4>
-                        <h4>Partners</h4>
-                          <ul class="nav">
-                            <li><a href=#>Cordis S.</a></li>
-                            <li><a href=#>Khadijah C.</a></li>
-                          </ul>
-  						<% elsif request.path == network_path %>
-                          <h4>wfNtwk</h4>
-                          <h4>Network</h4>
-                            <ul class="nav">
-                              <li><a href=#>Service Providers</a></li>
-                              <li><a href=#>Get Invited</a></li>
-                            </ul>
-	  					<% elsif request.path == network_path %>
-	                       <h4>wfNtwk</h4>
-	                       <h4>Ethos</h4>
-	                         <ul class="nav">
-	                           <li><a href=#>Service Providers</a></li>
-	                           <li><a href=#>Get Invited</a></li>
-	                         </ul>    
-						<% else %>
-                    <h4>wfg</h4>
-                    <h4>WF Collective</h4>
-                      <ul class="nav">
-                        <li><%= link_to "Companies", companies_path %></li>
-                        <li><%= link_to "Projects", projects_path %></li>
-                        <li><%= link_to "Partners", partners_path %></li>
-                        <li><%= link_to "Network", network_path %></li>
-                        <li><%= link_to "Ethos", ethos_path %></li>
-                      </ul>
-					  <% end %>
+							
+							<%= render partial: 'layouts/company_links' if request.path == companies_path %>
+							<%= render partial: 'layouts/company_links' if request.path == start_up_path %>
+							<%= render partial: 'layouts/company_links' if request.path == ventures_path %>
+							<%= render partial: 'layouts/company_links' if request.path == advisory_path %>
+							<%= render partial: 'layouts/company_links' if request.path == real_estate_path %>
+						
+                            <%= render partial: 'layouts/partners' if request.path == partners_path%>
+							<%= render partial: 'layouts/partners' if request.path == cordis_stanfield_path%>
+							<%= render partial: 'layouts/partners' if request.path == khadijah_coakley_path%>
+							<%= render partial: 'layouts/projects_links' if request.path == projects_path %>
+							<%= render partial: 'layouts/projects_links' if request.path == launched_path %>
+							<%= render partial: 'layouts/projects_links' if request.path == in_development_path %>
+							<%= render partial: 'layouts/projects_links' if request.path == re_releases_path %>
+							<%= render partial: 'layouts/projects_links' if request.path == big_ideas_path %>
+							<%= render partial: 'layouts/projects_links' if request.path == domains_path %>
+							
+							<%= render partial: 'layouts/network_links' if request.path == network_path %>
+							
+	                       
+	  					
+	                         
+		  			
 					  
 					  
                   </aside>
-                   <aside>
+                   <%#<aside>%>
 
 <% if user_signed_in? %>
 
@@ -66,7 +43,7 @@
                     <h5>Profile</h5>
                     <ul class="nav">
                       <li><a href="#">My Profile</a></li>
-                      <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+                      <li><%= link_to "Edit Profile", edit_user_registration_path %></li> <!-- Edit Profile -->
                     </ul>
                     <br/>
                     <h5>Projects.</h5>
@@ -91,22 +68,22 @@
 		<% else %>
 
 
-                    <h5>Join.</h5>
+                    <h5></h5><!-- Join. -->
                     <ul class="nav">
-                      <li><%= link_to "Get Invited", new_user_registration_path %></li>
+                      <li><%#= link_to "Get Invited", new_user_registration_path %></li><!-- Get Invited -->
                     </ul>
                     <br/>
-                    <h5>Create.</h5>
+                    <h5></h5><!-- Create. -->
                     <ul class="nav">
-                      <li><%= link_to "Start a Project ##", new_project_path %></li>
+                      <li><%#= link_to "Start a Project ##", new_project_path %></li><!-- Start a Project -->
                     </ul>
                     <br/>
-                    <h5>Connect.</h5>
+                    <h5></h5><!-- Connect. -->
                     <ul class="nav">
-                      <li><a href="contact.html">Get in Touch ##</a></li>
+                      <li><%#= link_to "Get in Touch ##", new_project_path %></li><!-- Get in Touch -->
                     </ul>
               </aside>
             </div>
-        </div>
+        </div> 
 		
 		<% end %>

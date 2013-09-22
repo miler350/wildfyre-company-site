@@ -18,6 +18,21 @@ class PagesController < ApplicationController
   def projects
   end
   
+  def launched
+  end
+  
+  def in_development
+  end
+  
+  def re_releases
+  end
+  
+  def big_ideas
+  end
+  
+  def domains
+  end
+  
   def partners
   end
   
@@ -25,5 +40,19 @@ class PagesController < ApplicationController
   end
   
   def ethos
+  end
+  
+  def khadijah
+    
+  end
+  
+  def cordis
+    
+  end
+  
+  def get_invited
+  end
+  
+  def service_providers
   end
 end

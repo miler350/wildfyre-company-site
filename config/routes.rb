@@ -9,6 +9,16 @@ WildfyreSite::Application.routes.draw do
   get '/ventures' => 'pages#ventures'
   get '/advisory' => 'pages#advisory'
   get '/real_estate' => 'pages#real_estate'
+  get '/khadijah_coakley' => 'pages#khadijah'
+  get '/cordis_stanfield' => 'pages#cordis'
+  get '/launched' => 'pages#launched'
+  get '/in_development' => 'pages#in_development'
+  get '/re_releases' => 'pages#re_releases'
+  get '/big_ideas' => 'pages#big_ideas'
+  get '/domains' => 'pages#domains'
+  get '/service_providers' => 'pages#service_providers'
+  get '/get_invited' => 'pages#get_invited'
+  
   # end of static pages ----------------------
   get "uploads/index"
   get "uploads/create"
