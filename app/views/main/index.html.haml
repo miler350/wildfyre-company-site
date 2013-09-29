@@ -1,138 +1,64 @@
-%body.l-body.home
-/ CANVAS
-.l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
-  .l-canvas-h
-    / HEADER
-    .l-header
-      .l-header-h
-        .l-subheader.at_middle
-          .l-subheader-h.i-cf
-            /
-              <div class="w-logo">
-              <div class="w-logo-h">
-              <a class="w-logo-link" href="index.html">
-              <img class="w-logo-img" src="img/wf_logo.png" style="height: 80%; opacity: .75;" alt="WILDFYRE">
-              <span class="w-logo-title">
-              <span class="w-logo-title-h">WILDFYRE</span>
-              </span>
-              </a>
-              </div>
-              </div>
-            / SEARCH
-            .w-search.submit_inside
-              .w-search-h
-                %a.w-search-show{href: "javascript:void(0)"}
-                  %i.icon-search
-                %form.w-search-form.show_hidden{action: "#"}
-                  .w-search-input
-                    %input{placeholder: "enter the query", type: "text", value: ""}/
-                  .w-search-submit
-                    %input{type: "submit", value: "Search"}/
-                    %i.icon-search
-                  %a.w-search-close{href: "javascript:void(0)", title: "Close search"} ✕
-            / NAV
-            %nav.w-nav
-              .w-nav-h
-                .w-nav-control
-                  %i.icon-reorder
-                .w-nav-list.layout_hor.width_auto.float_right.level_1
-                  .w-nav-list-h
-                    .w-nav-item.level_1.with_sublevel.active
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "index.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Companies
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel.active
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "index.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Projects
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel.active
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "index.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Partners
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "about.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Network
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "portfolio-3.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Ethos
-                          %span.w-nav-hint
-    / /HEADER
-    / MAIN
-    .l-main
-      .l-main-h
-        .l-submain.type_fullwidth.border_none
-          .l-submain-h.g-html
-            .g-cols
-              .full-width
-                .fullwidthbanner-container
-                  .fullwidthbanner
-                    %ul
-                      %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                        =image_tag  "img/slides/wf_head.jpg", alt: ""
-                        .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "90"}
-                          %h1.wf-logo WILDFYRE
-                          .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "200", "data-y" => "290"}
-                            /
-                              <button class="g-btn type_secondary size_big" href="#">
-                              <span>
-                              JOIN THE WILDFYRE NETWORK
-                              <i class="icon-chevron-sign-right"></i>
-                              </span>
-                              </button>
-                              
-                              <!-- <div class="tile-wrapper">
-                              <div class="slider-tile">
-                              <i class="typcn typcn-leaf"></i>
-                              <h5>Design  CODE 	 FINANCE</h5>
-                              <div class="hr large-1 small-3"></div>
-                              </div>
-          .l-submain
-            .l-submain-h.g-html
-              .page-header.pad-bottom.text-center
-                %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WE KNOW A LOT ABOUT A LOT"
-                .hr.light.large-1.small-3
-              .g-cols.intro-section{style: "margin-top: 40px;"}
-                .one-fourth
-                  %h6 FINANCE
-                  %p We are financial wizards.
-                  = link_to image_tag("img/icons/v2/64/Keywords & Rankings.png", class: "center"), finance_path
-                .one-fourth
-                  %h6 CREATIVE
-                  %p We design stuff.
-                  = link_to image_tag("img/icons/v2/64/Creative Campaigns.png", class: "center"), creative_path
-                .one-fourth
-                  %h6 TECHNICAL
-                  %p We build Rails apps.
-                  = link_to image_tag("img/icons/v2/64/Responsive Design.png", class: "center"), technical_path
-                .one-fourth
-                  %h6 STRATEGY
-                  %p We help companies grow.
-                  = link_to image_tag("img/icons/v2/64/SEO Training.png", class: "center"), strategy_path
-      / /MAIN
-  / /CANVAS
-  / FOOTER
-  .l-footer.type_normal
-    .l-footer-h{style: "background: #000;"}
-      / subfooter: bottom
-      .l-subfooter.at_bottom
-        .l-subfooter-h.i-cf
-          .w-copyright
-  / /FOOTER
-  %a.w-toplink{href: "#"}
-    %i.icon-angle-up
+
+/ MAIN
+.l-main
+  .l-main-h
+    .l-submain.type_fullwidth.border_none
+      .l-submain-h.g-html
+        .g-cols
+          .full-width
+            .fullwidthbanner-container
+              .fullwidthbanner
+                %ul
+                  %li{"data-slotamount" => "7", "data-transition" => "fade"}
+                    =image_tag  "img/slides/wf_head.jpg", alt: ""
+                    .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "90"}
+                      %h1.wf-logo WILDFYRE
+                      .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "200", "data-y" => "290"}
+                        /
+                          <button class="g-btn type_secondary size_big" href="#">
+                          <span>
+                          JOIN THE WILDFYRE NETWORK
+                          <i class="icon-chevron-sign-right"></i>
+                          </span>
+                          </button>
+                          
+                          <!-- <div class="tile-wrapper">
+                          <div class="slider-tile">
+                          <i class="typcn typcn-leaf"></i>
+                          <h5>Design  CODE 	 FINANCE</h5>
+                          <div class="hr large-1 small-3"></div>
+                          </div>
+      .l-submain
+        .l-submain-h.g-html
+          .page-header.pad-bottom.text-center
+            %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WE KNOW A LOT ABOUT A LOT"
+            .hr.light.large-1.small-3
+          .g-cols.intro-section{style: "margin-top: 40px;"}
+            .one-fourth
+              %h6 FINANCE
+              %p We are financial wizards.
+              = link_to image_tag("img/icons/v2/64/Keywords & Rankings.png", class: "center"), finance_path
+            .one-fourth
+              %h6 CREATIVE
+              %p We design stuff.
+              = link_to image_tag("img/icons/v2/64/Creative Campaigns.png", class: "center"), creative_path
+            .one-fourth
+              %h6 TECHNICAL
+              %p We build Rails apps.
+              = link_to image_tag("img/icons/v2/64/Responsive Design.png", class: "center"), technical_path
+            .one-fourth
+              %h6 STRATEGY
+              %p We help companies grow.
+              = link_to image_tag("img/icons/v2/64/SEO Training.png", class: "center"), strategy_path
+  / /MAIN
+/ /CANVAS
+/ FOOTER
+.l-footer.type_normal
+.l-footer-h{style: "background: #000;"}
+  / subfooter: bottom
+  .l-subfooter.at_bottom
+    .l-subfooter-h.i-cf
+      .w-copyright
+/ /FOOTER
+%a.w-toplink{href: "#"}
+%i.icon-angle-up

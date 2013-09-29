@@ -1,349 +1,217 @@
 
-%body.l-body.home
-/ CANVAS
-.l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
-  .l-canvas-h
-    / HEADER
-    .l-header
-      .l-header-h
-        .l-subheader.at_middle
-          .l-subheader-h.i-cf
-            /
-              <div class="w-logo">
-              <div class="w-logo-h">
-              <a class="w-logo-link" href="index.html">
-              <img class="w-logo-img" src="img/wf_logo.png" style="height: 80%; opacity: .75;" alt="WILDFYRE">
-              <span class="w-logo-title">
-              <span class="w-logo-title-h">WILDFYRE</span>
-              </span>
-              </a>
-              </div>
-              </div>
-            / SEARCH
-            .w-search.submit_inside
-              .w-search-h
-                %a.w-search-show{href: "javascript:void(0)"}
-                  %i.icon-search
-                %form.w-search-form.show_hidden{action: "#"}
-                  .w-search-input
-                    %input{placeholder: "enter the query", type: "text", value: ""}/
-                  .w-search-submit
-                    %input{type: "submit", value: "Search"}/
-                    %i.icon-search
-                  %a.w-search-close{href: "javascript:void(0)", title: "Close search"} ✕
-            / NAV
-            %nav.w-nav
-              .w-nav-h
-                .w-nav-control
-                  %i.icon-reorder
-                .w-nav-list.layout_hor.width_auto.float_right.level_1
-                  .w-nav-list-h
-                    .w-nav-item.level_1.with_sublevel.active
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "index.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Companies
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel.active
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "index.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Projects
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel.active
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "index.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Partners
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "about.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Network
-                          %span.w-nav-hint
-                    .w-nav-item.level_1.with_sublevel
-                      .w-nav-item-h
-                        %a.w-nav-anchor.level_1{href: "portfolio-3.html"}
-                          %span.w-nav-icon
-                            %i.icon-star
-                          %span.w-nav-title Ethos
-                          %span.w-nav-hint
-    / /HEADER
-    / MAIN
-    .l-main
-      .l-main-h
-        .l-submain.type_fullwidth.border_none
+
+/ MAIN
+.l-main
+  .l-main-h
+    .l-submain.type_fullwidth.border_none
+      .l-submain-h.g-html
+        .g-cols
+          .full-width
+            .fullwidthbanner-container.condensed
+              .fullwidthbanner
+                %ul
+                  %li{"data-slotamount" => "7", "data-transition" => "fade"}
+                    %img{alt: "", src: "img/slides/wf_head.jpg"}/
+                    .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
+                      %h1.wf-logo WILDFYRE
+      .l-submain
+        .l-submain-h.g-html
+          .page-header.pad-bottom.text-center
+            .box-heading
+              IDEA REFINEMENT/RESEARCH/VALIDATION/POSITIONING/USER ACQUISITION
+            %h1{style: "text-align: center;"} CREATIVE ENGINEERING
+            .hr.large-1.small-3
+          .g-cols
+            .one-third
+              %h6 MOM'S RECIPE
+              %p We're design chefs that add just the right ingredients. Just the way you like it.
+            .two-thirds
+              %p.quote
+                There is only one way to avoid criticism: do nothing, say nothing, and be nothing.
+        .g-hr.type_long
+          %span.g-hr-h
+            %i.icon-arrow-down
+        #parallax_section.l-submain.color_primary{style: "background-image: url(img/slides/creative-process.jpg);"}
           .l-submain-h.g-html
-            .g-cols
-              .full-width
-                .fullwidthbanner-container.condensed
-                  .fullwidthbanner
-                    %ul
-                      %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                        %img{alt: "", src: "img/slides/wf_head.jpg"}/
-                        .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
-                          %h1.wf-logo WILDFYRE
-          .l-submain
-            .l-submain-h.g-html
-              .page-header.pad-bottom.text-center
-                .box-heading
-                  IDEA REFINEMENT/RESEARCH/VALIDATION/POSITIONING/USER ACQUISITION
-                %h1{style: "text-align: center;"} CREATIVE ENGINEERING
-                .hr.large-1.small-3
-              .g-cols
-                .one-third
-                  %h6 MOM'S RECIPE
-                  %p We're design chefs that add just the right ingredients. Just the way you like it.
-                .two-thirds
-                  %p.quote
-                    There is only one way to avoid criticism: do nothing, say nothing, and be nothing.
-            .g-hr.type_long
+            %h2
+            .g-hr.type_invisible
               %span.g-hr-h
-                %i.icon-arrow-down
-            #parallax_section.l-submain.color_primary{style: "background-image: url(img/slides/creative-process.jpg);"}
-              .l-submain-h.g-html
-                %h2
-                .g-hr.type_invisible
-                  %span.g-hr-h
-                    %i.icon-star
-            :javascript
-              jQuery(window).load(function(){ jQuery('#parallax_section').parallax('50%', '-1.2'); });
-            .l-submain{style: "padding-bottom: 0; border-top: none"}
-              .l-submain-h.g-html.i-cf
-                .page-header.pad-bottom.text-center
-                  %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WHY PEOPLE HIRE US"
-                  .hr.light.large-1.small-3
-                .g-cols
-                  .one-third
-                    %h4
-                      what we do
-                  .one-third
-                    %h6 LONDON BRIDGE
-                    %p We design to create business value and do more than make it 'look good.'  We bridge the gap between you and your target audience.
-                  .one-third
-                    %h6 GEPPETTO
-                    %p We specialize in creation and making ideas come to life. We'll fulfill your wishes even if we have to pull a few strings.
-              .l-submain-h.g-html.i-cf
-                .g-cols
-                  .one-third
-                    Testimonials
-                  .two-thirds
-                    .animate_wfc
-                      .w-timeline
-                        .w-timeline-h
-                          .w-timeline-list
-                            .w-timeline-list-h
-                              .g-hr.type_short
-                                %span.g-hr-h
-                                  %i.icon-reorder
-                              .w-timeline-item.active
-                                %span.w-timeline-item-bullet
-                                =image_tag "img/icons/V1/64/Creative Campaigns.png", style: "height: 40%; width: 30px;", alt: "Tit 2"
-                                %h6 IDEA GENERATION
-                              .w-timeline-item
-                                %span.w-timeline-item-bullet
-                                %img{alt: "Tit 1", src: "img/icons/V1/64/Online Presence.png"}/
-                                %h6 CUSTOMER ACQUISITION
-                              .w-timeline-item
-                                %span.w-timeline-item-bullet
-                                %img{alt: "Tit 1", src: "img/icons/V1/64/Market Research.png"}/
-                                %h6 PRODUCT DEVELOPMENT
-                              .w-timeline-item
-                                %span.w-timeline-item-bullet
-                                %img{alt: "Tit 1", src: "img/icons/V1/64/Communities & Networks.png"}/
-                                %h6 COMMUNITIES & NETWORKS
-                              .w-timeline-item
-                                %span.w-timeline-item-bullet
-                                %img{alt: "Tit 1", src: "img/icons/V1/64/E-Mail Marketing.png"}/
-                                %h6 E-MAIL CAMPAIGNING
-                        .w-timeline-sections
-                          .w-timeline-section.active.animate_afr
-                            .w-timeline-section-h
-                              .w-timeline-section-content
-                                .g-cols
-                                  .two-thirds
-                                    %h4 IDEA GENERATION
-                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                    %ul
-                                      %li Idea inception, vetting, execution
-                                      %li Market Research
-                                      %li Monetization Strategies
-                                      %li Identify additional business opportunities
-                                      %li Brainstorming & Decision Trees
-                                  .one-third
-                                    %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                    %p{style: "text-align: center;"}
-                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                        %span HIRE US
-                          .w-timeline-section
-                            .w-timeline-section-h
-                              .w-timeline-section-title
-                                %span.w-timeline-section-title-bullet
-                                %span.w-timeline-section-title-text 2010
-                              .w-timeline-section-content
-                                .g-cols
-                                  .two-thirds
-                                    %h4 CUSTOMER ACQUISITION
-                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                    %ul
-                                      %li Lead Generation pages
-                                      %li Pay per click
-                                      %li Email campaign
-                                      %li Sales copywriting
-                                      %li Marketing Presentations
-                                  .one-third
-                                    %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                    %p{style: "text-align: center;"}
-                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                        %span HIRE US
-                          .w-timeline-section
-                            .w-timeline-section-h
-                              .w-timeline-section-title
-                                %span.w-timeline-section-title-bullet
-                                %span.w-timeline-section-title-text 2011
-                              .w-timeline-section-content
-                                .g-cols
-                                  .two-thirds
-                                    %h4 PRODUCT DEVELOPMENT
-                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                    %ul
-                                      %li Market Surveys
-                                      %li Minimum Value Proposition
-                                      %li Beta Testing and Market Testing
-                                      %li Business Analysis
-                                      %li Target Audience Identification
-                                  .one-third
-                                    %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                    %p{style: "text-align: center;"}
-                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                        %span HIRE US
-                          .w-timeline-section
-                            .w-timeline-section-h
-                              .w-timeline-section-title
-                                %span.w-timeline-section-title-bullet
-                                %span.w-timeline-section-title-text 2012
-                              .w-timeline-section-content
-                                .g-cols
-                                  .two-thirds
-                                    %h4 COMMUNITIES & NETWORKS
-                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                    %ul
-                                      %li Returns Analysis
-                                      %li Investment "ft" review
-                                      %li Due Diligence
-                                      %li Exit Modelling
-                                      %li Company appraisal
-                                  .one-third
-                                    %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                    %p{style: "text-align: center;"}
-                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                        %span HIRE US
-                          .w-timeline-section
-                            .w-timeline-section-h
-                              .w-timeline-section-title
-                                %span.w-timeline-section-title-bullet
-                                %span.w-timeline-section-title-text 2013
-                              .w-timeline-section-content
-                                .g-cols
-                                  .two-thirds
-                                    %h4 E-MAIL CAMPAIGNS
-                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                    %ul
-                                      %li Theme Creation
-                                      %li Up-selling and Cross-selling campaigns
-                                      %li Brand Awareness Campaigns
-                                      %li Special Offers
-                                      %li Increase off-peak profitability
-                                  .one-third
-                                    %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                    %p{style: "text-align: center;"}
-                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                        %span HIRE US
-            .l-submain
-              .l-submain-h.g-html
-                .page-header.pad-bottom.text-center
-                  .box-heading
-                    WE KOW A LOT... WE DO A LOT
-                  %h1{style: "text-align: center;"} HIRE US
-                  .hr.large-1.small-3
-                .g-cols
-                  .one-third
-                    %p
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur autem
-                      dicta doloremque eaque eum, facilis maxime, pariatur reiciendis rem saepe ullam
-                      ut voluptate, voluptates.
-                  .one-third
-                    %p
-                      At delectus doloremque dolores explicabo laudantium minima qui. Animi aperiam
-                      aspernatur atque debitis distinctio impedit inventore iure labore modi omnis,
-                      optio rerum ut veritatis voluptatum?
-                  .one-third
-                    %p
-                      Accusamus et hic inventore iure iusto modi reprehenderit soluta. Aliquam,
-                      assumenda at consequuntur cumque, enim, explicabo iusto libero maiores nisi
-                      numquam odio porro praesentium quis.
-    / /MAIN
+                %i.icon-star
+        :javascript
+          jQuery(window).load(function(){ jQuery('#parallax_section').parallax('50%', '-1.2'); });
+        .l-submain{style: "padding-bottom: 0; border-top: none"}
+          .l-submain-h.g-html.i-cf
+            .page-header.pad-bottom.text-center
+              %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WHY PEOPLE HIRE US"
+              .hr.light.large-1.small-3
+            .g-cols
+              .one-third
+                %h4
+                  what we do
+              .one-third
+                %h6 LONDON BRIDGE
+                %p We design to create business value and do more than make it 'look good.'  We bridge the gap between you and your target audience.
+              .one-third
+                %h6 GEPPETTO
+                %p We specialize in creation and making ideas come to life. We'll fulfill your wishes even if we have to pull a few strings.
+          .l-submain-h.g-html.i-cf
+            .g-cols
+              .one-third
+                Testimonials
+              .two-thirds
+                .animate_wfc
+                  .w-timeline
+                    .w-timeline-h
+                      .w-timeline-list
+                        .w-timeline-list-h
+                          .g-hr.type_short
+                            %span.g-hr-h
+                              %i.icon-reorder
+                          .w-timeline-item.active
+                            %span.w-timeline-item-bullet
+                            =image_tag "img/icons/V1/64/Creative Campaigns.png", style: "height: 40%; width: 30px;", alt: "Tit 2"
+                            %h6 IDEA GENERATION
+                          .w-timeline-item
+                            %span.w-timeline-item-bullet
+                            %img{alt: "Tit 1", src: "img/icons/V1/64/Online Presence.png"}/
+                            %h6 CUSTOMER ACQUISITION
+                          .w-timeline-item
+                            %span.w-timeline-item-bullet
+                            %img{alt: "Tit 1", src: "img/icons/V1/64/Market Research.png"}/
+                            %h6 PRODUCT DEVELOPMENT
+                          .w-timeline-item
+                            %span.w-timeline-item-bullet
+                            %img{alt: "Tit 1", src: "img/icons/V1/64/Communities & Networks.png"}/
+                            %h6 COMMUNITIES & NETWORKS
+                          .w-timeline-item
+                            %span.w-timeline-item-bullet
+                            %img{alt: "Tit 1", src: "img/icons/V1/64/E-Mail Marketing.png"}/
+                            %h6 E-MAIL CAMPAIGNING
+                    .w-timeline-sections
+                      .w-timeline-section.active.animate_afr
+                        .w-timeline-section-h
+                          .w-timeline-section-content
+                            .g-cols
+                              .two-thirds
+                                %h4 IDEA GENERATION
+                                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                %ul
+                                  %li Idea inception, vetting, execution
+                                  %li Market Research
+                                  %li Monetization Strategies
+                                  %li Identify additional business opportunities
+                                  %li Brainstorming & Decision Trees
+                              .one-third
+                                %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                %p{style: "text-align: center;"}
+                                  %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                    %span HIRE US
+                      .w-timeline-section
+                        .w-timeline-section-h
+                          .w-timeline-section-title
+                            %span.w-timeline-section-title-bullet
+                            %span.w-timeline-section-title-text 2010
+                          .w-timeline-section-content
+                            .g-cols
+                              .two-thirds
+                                %h4 CUSTOMER ACQUISITION
+                                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                %ul
+                                  %li Lead Generation pages
+                                  %li Pay per click
+                                  %li Email campaign
+                                  %li Sales copywriting
+                                  %li Marketing Presentations
+                              .one-third
+                                %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                %p{style: "text-align: center;"}
+                                  %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                    %span HIRE US
+                      .w-timeline-section
+                        .w-timeline-section-h
+                          .w-timeline-section-title
+                            %span.w-timeline-section-title-bullet
+                            %span.w-timeline-section-title-text 2011
+                          .w-timeline-section-content
+                            .g-cols
+                              .two-thirds
+                                %h4 PRODUCT DEVELOPMENT
+                                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                %ul
+                                  %li Market Surveys
+                                  %li Minimum Value Proposition
+                                  %li Beta Testing and Market Testing
+                                  %li Business Analysis
+                                  %li Target Audience Identification
+                              .one-third
+                                %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                %p{style: "text-align: center;"}
+                                  %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                    %span HIRE US
+                      .w-timeline-section
+                        .w-timeline-section-h
+                          .w-timeline-section-title
+                            %span.w-timeline-section-title-bullet
+                            %span.w-timeline-section-title-text 2012
+                          .w-timeline-section-content
+                            .g-cols
+                              .two-thirds
+                                %h4 COMMUNITIES & NETWORKS
+                                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                %ul
+                                  %li Returns Analysis
+                                  %li Investment "ft" review
+                                  %li Due Diligence
+                                  %li Exit Modelling
+                                  %li Company appraisal
+                              .one-third
+                                %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                %p{style: "text-align: center;"}
+                                  %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                    %span HIRE US
+                      .w-timeline-section
+                        .w-timeline-section-h
+                          .w-timeline-section-title
+                            %span.w-timeline-section-title-bullet
+                            %span.w-timeline-section-title-text 2013
+                          .w-timeline-section-content
+                            .g-cols
+                              .two-thirds
+                                %h4 E-MAIL CAMPAIGNS
+                                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                %ul
+                                  %li Theme Creation
+                                  %li Up-selling and Cross-selling campaigns
+                                  %li Brand Awareness Campaigns
+                                  %li Special Offers
+                                  %li Increase off-peak profitability
+                              .one-third
+                                %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                %p{style: "text-align: center;"}
+                                  %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                    %span HIRE US
+        .l-submain
+          .l-submain-h.g-html
+            .page-header.pad-bottom.text-center
+              .box-heading
+                WE KNOW A LOT... WE DO A LOT
+              %h1{style: "text-align: center;"} HIRE US
+              .hr.large-1.small-3
+            .g-cols
+              .one-third
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur autem
+                  dicta doloremque eaque eum, facilis maxime, pariatur reiciendis rem saepe ullam
+                  ut voluptate, voluptates.
+              .one-third
+                %p
+                  At delectus doloremque dolores explicabo laudantium minima qui. Animi aperiam
+                  aspernatur atque debitis distinctio impedit inventore iure labore modi omnis,
+                  optio rerum ut veritatis voluptatum?
+              .one-third
+                %p
+                  Accusamus et hic inventore iure iusto modi reprehenderit soluta. Aliquam,
+                  assumenda at consequuntur cumque, enim, explicabo iusto libero maiores nisi
+                  numquam odio porro praesentium quis.
+/ /MAIN
 / /CANVAS
-/ FOOTER
-.l-footer.type_normal
-  .l-footer-h{style: "background: #000;"}
-    / subfooter: top
-    .l-subfooter.at_top{style: "background: #f5f5f5; border-top: none;"}
-      .l-subfooter-h.g-cols.cols_fluid
-        .two-thirds
-          .widget
-            %h6 WILDFYRE
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit
-              = succeed "." do
-                %a{href: "#"} amet fermentum
-        .one-third
-          .widget
-            %h6 Contact
-            .w-contacts
-              .w-contacts-h
-                .w-contacts-list
-                  .w-contacts-item.for_address
-                    %i.icon-location
-                    %span.w-contacts-item-name Locale:
-                    %span.w-contacts-item-value WASHINGTON DC / AUSTIN TX
-                  .w-contacts-item.for_phone
-                    %i.icon-mobile
-                    %span.w-contacts-item-name Phone:
-                    %span.w-contacts-item-value
-                      %span 855 233 2345
-                  .w-contacts-item.for_email
-                    %i.icon-mail
-                    %span.w-contacts-item-name Email:
-                    %span.w-contacts-item-value
-                      %a{href: "mailto:info@example.com"} info@wildfyre.com
-          .widget
-            .w-socials.size_normal
-              .w-socials-h
-                .w-socials-list
-                  .w-socials-item.facebook
-                    %a.w-socials-item-link{href: "javascript:void(0);", target: "_blank"}
-                      %i.icon-facebook
-                    .w-socials-item-popup
-                      .w-socials-item-popup-h
-                        %span.w-socials-item-popup-text Facebook
-                  .w-socials-item.twitter
-                    %a.w-socials-item-link{href: "javascript:void(0);", target: "_blank"}
-                      %i.icon-twitter
-                    .w-socials-item-popup
-                      .w-socials-item-popup-h
-                        %span.w-socials-item-popup-text Twitter
-                  .w-socials-item.gplus
-                    %a.w-socials-item-link{href: "javascript:void(0);", target: "_blank"}
-                      %i.icon-google-plus
-                    .w-socials-item-popup
-                      .w-socials-item-popup-h
-                        %span.w-socials-item-popup-text Google
-/ /FOOTER
-%a.w-toplink{href: "#"}
-  %i.icon-angle-up
