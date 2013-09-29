@@ -111,23 +111,19 @@
                 .one-fourth
                   %h6 FINANCE
                   %p We are financial wizards.
-                  %a{href: "overview_finance.html"}
-                    =image_tag "img/icons/v2/64/Keywords & Rankings.png", class: "center"
+                  = link_to image_tag("img/icons/v2/64/Keywords & Rankings.png", class: "center"), finance_path
                 .one-fourth
                   %h6 CREATIVE
                   %p We design stuff.
-                  %a{href: "overview_creative.html"}
-                    =image_tag "img/icons/v2/64/Creative Campaigns.png", class: "center"
+                  = link_to image_tag("img/icons/v2/64/Creative Campaigns.png", class: "center"), creative_path
                 .one-fourth
                   %h6 TECHNICAL
                   %p We build Rails apps.
-                  %a{href: "overview_technical.html"}
-                    =image_tag "img/icons/v2/64/Responsive Design.png", class: "center"
+                  = link_to image_tag("img/icons/v2/64/Responsive Design.png", class: "center"), technical_path
                 .one-fourth
                   %h6 STRATEGY
                   %p We help companies grow.
-                  %a{href: "overview_strategy.html"}
-                    =image_tag "img/icons/v2/64/SEO Training.png", class: "center"
+                  = link_to image_tag("img/icons/v2/64/SEO Training.png", class: "center"), strategy_path
       / /MAIN
   / /CANVAS
   / FOOTER

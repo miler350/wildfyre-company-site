@@ -1,0 +1,349 @@
+
+%body.l-body.home
+/ CANVAS
+.l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
+  .l-canvas-h
+    / HEADER
+    .l-header
+      .l-header-h
+        .l-subheader.at_middle
+          .l-subheader-h.i-cf
+            /
+              <div class="w-logo">
+              <div class="w-logo-h">
+              <a class="w-logo-link" href="index.html">
+              <img class="w-logo-img" src="img/wf_logo.png" style="height: 80%; opacity: .75;" alt="WILDFYRE">
+              <span class="w-logo-title">
+              <span class="w-logo-title-h">WILDFYRE</span>
+              </span>
+              </a>
+              </div>
+              </div>
+            / SEARCH
+            .w-search.submit_inside
+              .w-search-h
+                %a.w-search-show{href: "javascript:void(0)"}
+                  %i.icon-search
+                %form.w-search-form.show_hidden{action: "#"}
+                  .w-search-input
+                    %input{placeholder: "enter the query", type: "text", value: ""}/
+                  .w-search-submit
+                    %input{type: "submit", value: "Search"}/
+                    %i.icon-search
+                  %a.w-search-close{href: "javascript:void(0)", title: "Close search"} ✕
+            / NAV
+            %nav.w-nav
+              .w-nav-h
+                .w-nav-control
+                  %i.icon-reorder
+                .w-nav-list.layout_hor.width_auto.float_right.level_1
+                  .w-nav-list-h
+                    .w-nav-item.level_1.with_sublevel.active
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "index.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Companies
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel.active
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "index.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Projects
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel.active
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "index.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Partners
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "about.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Network
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "portfolio-3.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Ethos
+                          %span.w-nav-hint
+    / /HEADER
+    / MAIN
+    .l-main
+      .l-main-h
+        .l-submain.type_fullwidth.border_none
+          .l-submain-h.g-html
+            .g-cols
+              .full-width
+                .fullwidthbanner-container.condensed
+                  .fullwidthbanner
+                    %ul
+                      %li{"data-slotamount" => "7", "data-transition" => "fade"}
+                        %img{alt: "", src: "img/slides/wf_head.jpg"}/
+                        .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
+                          %h1.wf-logo WILDFYRE
+          .l-submain
+            .l-submain-h.g-html
+              .page-header.pad-bottom.text-center
+                .box-heading
+                  INVESTMENT BANKING/VC/PE/CAPITAL MARKETS/ASSET MGMT/OPS
+                %h1{style: "text-align: center;"} FINANCIAL WIZARDRY
+                .hr.large-1.small-3
+              .g-cols
+                .one-third
+                  %h6 PIGSTY
+                  %p We turn pigsties into piggy banks. We give your financials an oink-ment.
+                .two-thirds
+                  %p.quote
+                    It is a kind of spiritual snobbery that makes people think they can be happy without money.
+            .g-hr.type_long
+              %span.g-hr-h
+                %i.icon-arrow-down
+            .l-submain.color_primary{id: "", style: "background-image: url(img/slides/morgan-stanley.jpg);"}
+              .l-submain-h.g-html
+                %h2
+                .g-hr.type_invisible
+                  %span.g-hr-h
+                    %i.icon-star
+            :javascript
+              jQuery(window).load(function(){ jQuery('#parallax_section').parallax('50%', '-1.2'); });
+            .l-submain{style: "padding-bottom: 0; border-top: none"}
+              .l-submain-h.g-html.i-cf
+                .page-header.pad-bottom.text-center
+                  %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WHY PEOPLE HIRE US"
+                  .hr.light.large-1.small-3
+                .g-cols
+                  .one-third
+                    %h4
+                      what we do
+                  .one-third
+                    %h6 CHILD'S PLAY
+                    %p We crunch numbers with ease. To us, gawdy financial models are similar to picture books...child's play.
+                  .one-third
+                    %h6 TEACHER'S PET
+                    %p We have a CFA charterholder and tutor trained to breakdown the difficult finance so that you can follow along. Bring the apple.
+              .l-submain-h.g-html.i-cf
+                .g-cols
+                  .one-third
+                    Testimonials
+                  .two-thirds
+                    .animate_wfc
+                      .w-timeline
+                        .w-timeline-h
+                          .w-timeline-list
+                            .w-timeline-list-h
+                              .g-hr.type_short
+                                %span.g-hr-h
+                                  %i.icon-reorder
+                              .w-timeline-item.active
+                                %span.w-timeline-item-bullet
+                                %img{alt: "Tit 3", src: "img/icons/V1/64/Affiliate Marketing.png"}/
+                                %h6 FINANCIAL MODELING
+                              .w-timeline-item
+                                %span.w-timeline-item-bullet
+                                %img{alt: "Tit 2", src: "img/icons/V1/64/Keywords & Rankings.png", style: "height: 40%; width: 60px;"}/
+                                %h6 FINANCIAL ANALYSIS
+                              .w-timeline-item
+                                %span.w-timeline-item-bullet
+                                %img{alt: "Tit 1", src: "img/icons/V1/64/Target Keywords.png"}/
+                                %h6 INVESTMENT EVALUATIONS
+                              .w-timeline-item
+                                %span.w-timeline-item-bullet
+                                %img{alt: "Tit 1", src: "img/icons/V1/64/Return On Investment.png"}/
+                                %h6 ASSET MANAGEMENT
+                              .w-timeline-item
+                                %span.w-timeline-item-bullet
+                                %img{alt: "Tit 1", src: "img/icons/V1/64/Conversion Optimization.png"}/
+                                %h6 PORTFOLIO ANALYSIS
+                          .w-timeline-sections
+                            .w-timeline-section.active.animate_afr
+                              .w-timeline-section-h
+                                .w-timeline-section-content
+                                  .g-cols
+                                    .two-thirds
+                                      %h4 FINANCIAL MODELING
+                                      %p Real world financial models to discover the story.
+                                      %ul
+                                        %li Business Valuation
+                                        %li Capital Budgeting
+                                        %li Project Finance
+                                        %li Stategic/Decision Tree Model
+                                        %li Forecasting
+                                    .one-third
+                                      %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                      %p{style: "text-align: center;"}
+                                        %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                          %span HIRE US
+                            .w-timeline-section
+                              .w-timeline-section-h
+                                .w-timeline-section-title
+                                  %span.w-timeline-section-title-bullet
+                                  %span.w-timeline-section-title-text 2010
+                                .w-timeline-section-content
+                                  .g-cols
+                                    .two-thirds
+                                      %h4 FINANCIAL ANALYSIS
+                                      %p A deep dive into the pool of numbers. 'We'll get to bottom of it.'
+                                      %ul
+                                        %li Financial Statement Review
+                                        %li Macro-economic Analysis
+                                        %li Profitability
+                                        %li Solvency
+                                        %li Liquidity
+                                    .one-third
+                                      %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                      %p{style: "text-align: center;"}
+                                        %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                          %span HIRE US
+                            .w-timeline-section
+                              .w-timeline-section-h
+                                .w-timeline-section-title
+                                  %span.w-timeline-section-title-bullet
+                                  %span.w-timeline-section-title-text 2011
+                                .w-timeline-section-content
+                                  .g-cols
+                                    .two-thirds
+                                      %h4 INVESTMENT EVALUATIONS
+                                      %p Considering new opportunities? We can help.
+                                      %ul
+                                        %li ROI, NPV, Breakeven Analysis
+                                        %li Due Diligence
+                                        %li Opportunity Cost of Capital
+                                        %li Exit Modeling & Plan
+                                        %li Landscape Survey
+                                    .one-third
+                                      %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                      %p{style: "text-align: center;"}
+                                        %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                          %span HIRE US
+                            .w-timeline-section
+                              .w-timeline-section-h
+                                .w-timeline-section-title
+                                  %span.w-timeline-section-title-bullet
+                                  %span.w-timeline-section-title-text 2012
+                                .w-timeline-section-content
+                                  .g-cols
+                                    .two-thirds
+                                      %h4 ASSET MANAGEMENT
+                                      %p A bank account is a torture chamber for cash. Investment Advisory services helps cash stockpile.
+                                      %ul
+                                        %li Fixed Income
+                                        %li Equities
+                                        %li Alternatives
+                                        %li Real Estate
+                                        %li Forex
+                                    .one-third
+                                      %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                      %p{style: "text-align: center;"}
+                                        %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                          %span HIRE US
+                            .w-timeline-section
+                              .w-timeline-section-h
+                                .w-timeline-section-title
+                                  %span.w-timeline-section-title-bullet
+                                  %span.w-timeline-section-title-text 2013
+                                .w-timeline-section-content
+                                  .g-cols
+                                    .two-thirds
+                                      %h4 PORTFOLIO ANALYSIS
+                                      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                      %ul
+                                        %li Returns Analysis
+                                        %li Investment "ft" review
+                                        %li Due Diligence
+                                        %li Exit Modelling
+                                        %li Company appraisal
+                                    .one-third
+                                      %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                      %p{style: "text-align: center;"}
+                                        %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                          %span HIRE US
+              .l-submain
+                .l-submain-h.g-html
+                  .page-header.pad-bottom.text-center
+                    .box-heading
+                      WE KOW A LOT... WE DO A LOT
+                    %h1{style: "text-align: center;"} HIRE US
+                    .hr.large-1.small-3
+                  .g-cols
+                    .one-third
+                      %p
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur autem
+                        dicta doloremque eaque eum, facilis maxime, pariatur reiciendis rem saepe ullam
+                        ut voluptate, voluptates.
+                    .one-third
+                      %p
+                        At delectus doloremque dolores explicabo laudantium minima qui. Animi aperiam
+                        aspernatur atque debitis distinctio impedit inventore iure labore modi omnis,
+                        optio rerum ut veritatis voluptatum?
+                    .one-third
+                      %p
+                        Accusamus et hic inventore iure iusto modi reprehenderit soluta. Aliquam,
+                        assumenda at consequuntur cumque, enim, explicabo iusto libero maiores nisi
+                        numquam odio porro praesentium quis.
+      / /MAIN
+  / /CANVAS
+  / FOOTER
+  .l-footer.type_normal
+    .l-footer-h{style: "background: #000;"}
+      / subfooter: top
+      .l-subfooter.at_top{style: "background: #f5f5f5; border-top: none;"}
+        .l-subfooter-h.g-cols.cols_fluid
+          .two-thirds
+            .widget
+              %h6 WILDFYRE
+              %p
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit
+                = succeed "." do
+                  %a{href: "#"} amet fermentum
+          .one-third
+            .widget
+              %h6 Contact
+              .w-contacts
+                .w-contacts-h
+                  .w-contacts-list
+                    .w-contacts-item.for_address
+                      %i.icon-location
+                      %span.w-contacts-item-name Locale:
+                      %span.w-contacts-item-value WASHINGTON DC / AUSTIN TX
+                    .w-contacts-item.for_phone
+                      %i.icon-mobile
+                      %span.w-contacts-item-name Phone:
+                      %span.w-contacts-item-value
+                        %span 855 233 2345
+                    .w-contacts-item.for_email
+                      %i.icon-mail
+                      %span.w-contacts-item-name Email:
+                      %span.w-contacts-item-value
+                        %a{href: "mailto:info@example.com"} info@wildfyre.com
+            .widget
+              .w-socials.size_normal
+                .w-socials-h
+                  .w-socials-list
+                    .w-socials-item.facebook
+                      %a.w-socials-item-link{href: "javascript:void(0);", target: "_blank"}
+                        %i.icon-facebook
+                      .w-socials-item-popup
+                        .w-socials-item-popup-h
+                          %span.w-socials-item-popup-text Facebook
+                    .w-socials-item.twitter
+                      %a.w-socials-item-link{href: "javascript:void(0);", target: "_blank"}
+                        %i.icon-twitter
+                      .w-socials-item-popup
+                        .w-socials-item-popup-h
+                          %span.w-socials-item-popup-text Twitter
+                    .w-socials-item.gplus
+                      %a.w-socials-item-link{href: "javascript:void(0);", target: "_blank"}
+                        %i.icon-google-plus
+                      .w-socials-item-popup
+                        .w-socials-item-popup-h
+                          %span.w-socials-item-popup-text Google
+  / /FOOTER
+  %a.w-toplink{href: "#"}
+    %i.icon-angle-up

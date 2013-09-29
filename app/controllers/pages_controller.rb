@@ -58,4 +58,14 @@ class PagesController < ApplicationController
   
   def creative
   end
+  
+  def technical
+  end
+  
+  def strategy
+  end
+  
+  def finance
+  end
+  
 end
