@@ -55,4 +55,7 @@ class PagesController < ApplicationController
   
   def service_providers
   end
+  
+  def creative
+  end
 end

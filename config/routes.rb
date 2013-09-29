@@ -18,6 +18,7 @@ WildfyreSite::Application.routes.draw do
   get '/domains' => 'pages#domains'
   get '/service_providers' => 'pages#service_providers'
   get '/get_invited' => 'pages#get_invited'
+  get '/creative' => 'pages#creative'
   
   # end of static pages ----------------------
   get "uploads/index"
