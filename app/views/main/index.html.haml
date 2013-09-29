@@ -1,177 +1,142 @@
-!!!
-%html{lang: "en-US"}
-  %head
-    %meta{charset: "UTF-8"}/
-    %title Wildfyre
-    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
-    %link{href: "favicon.ico", rel: "shortcut icon", type: "image/x-icon"}/
-    %link{href: "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900", rel: "stylesheet", type: "text/css"}/
-    %link{href: "http://fonts.googleapis.com/css?family=Petrona", rel: "stylesheet", type: "text/css"}/
-    %link{href: "http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/motioncss.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/motioncss-widgets.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/font-awesome.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/rs-settings.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/magnific-popup.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/style.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/responsive.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/animation.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link{href: "css/colors/color_11.css", media: "all", rel: "stylesheet", type: "text/css"}/
-    %script{src: "js/jquery-1.9.1.js", type: "text/javascript"}
-    %script{src: "js/g-alert.js", type: "text/javascript"}
-    %script{src: "js/jquery.carousello.js", type: "text/javascript"}
-    %script{src: "js/jquery.flexslider.js", type: "text/javascript"}
-    %script{src: "js/jquery.isotope.js", type: "text/javascript"}
-    %script{src: "js/jquery.magnific-popup.js", type: "text/javascript"}
-    %script{src: "js/jquery.parallax.js", type: "text/javascript"}
-    %script{src: "js/jquery.simpleplaceholder.js", type: "text/javascript"}
-    %script{src: "js/jquery.smoothScroll.js", type: "text/javascript"}
-    %script{src: "js/jquery.themepunch.revolution.min.js", type: "text/javascript"}
-    %script{src: "js/plugins.js", type: "text/javascript"}
-    %script{src: "js/waypoints.min.js", type: "text/javascript"}
-    %script{src: "js/w-lang.js", type: "text/javascript"}
-    %script{src: "js/w-search.js", type: "text/javascript"}
-    %script{src: "js/w-tabs.js", type: "text/javascript"}
-    %script{src: "js/w-timeline.js", type: "text/javascript"}
-  %body.l-body.home
-    / CANVAS
-    .l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
-      .l-canvas-h
-        / HEADER
-        .l-header
-          .l-header-h
-            .l-subheader.at_middle
-              .l-subheader-h.i-cf
-                /
-                  <div class="w-logo">
-                  <div class="w-logo-h">
-                  <a class="w-logo-link" href="index.html">
-                  <img class="w-logo-img" src="img/wf_logo.png" style="height: 80%; opacity: .75;" alt="WILDFYRE">
-                  <span class="w-logo-title">
-                  <span class="w-logo-title-h">WILDFYRE</span>
-                  </span>
-                  </a>
-                  </div>
-                  </div>
-                / SEARCH
-                .w-search.submit_inside
-                  .w-search-h
-                    %a.w-search-show{href: "javascript:void(0)"}
-                      %i.icon-search
-                    %form.w-search-form.show_hidden{action: "#"}
-                      .w-search-input
-                        %input{placeholder: "enter the query", type: "text", value: ""}/
-                      .w-search-submit
-                        %input{type: "submit", value: "Search"}/
-                        %i.icon-search
-                      %a.w-search-close{href: "javascript:void(0)", title: "Close search"} ✕
-                / NAV
-                %nav.w-nav
-                  .w-nav-h
-                    .w-nav-control
-                      %i.icon-reorder
-                    .w-nav-list.layout_hor.width_auto.float_right.level_1
-                      .w-nav-list-h
-                        .w-nav-item.level_1.with_sublevel.active
-                          .w-nav-item-h
-                            %a.w-nav-anchor.level_1{href: "index.html"}
-                              %span.w-nav-icon
-                                %i.icon-star
-                              %span.w-nav-title Companies
-                              %span.w-nav-hint
-                        .w-nav-item.level_1.with_sublevel.active
-                          .w-nav-item-h
-                            %a.w-nav-anchor.level_1{href: "index.html"}
-                              %span.w-nav-icon
-                                %i.icon-star
-                              %span.w-nav-title Projects
-                              %span.w-nav-hint
-                        .w-nav-item.level_1.with_sublevel.active
-                          .w-nav-item-h
-                            %a.w-nav-anchor.level_1{href: "index.html"}
-                              %span.w-nav-icon
-                                %i.icon-star
-                              %span.w-nav-title Partners
-                              %span.w-nav-hint
-                        .w-nav-item.level_1.with_sublevel
-                          .w-nav-item-h
-                            %a.w-nav-anchor.level_1{href: "about.html"}
-                              %span.w-nav-icon
-                                %i.icon-star
-                              %span.w-nav-title Network
-                              %span.w-nav-hint
-                        .w-nav-item.level_1.with_sublevel
-                          .w-nav-item-h
-                            %a.w-nav-anchor.level_1{href: "portfolio-3.html"}
-                              %span.w-nav-icon
-                                %i.icon-star
-                              %span.w-nav-title Ethos
-                              %span.w-nav-hint
-        / /HEADER
-        / MAIN
-        .l-main
-          .l-main-h
-            .l-submain.type_fullwidth.border_none
-              .l-submain-h.g-html
-                .g-cols
-                  .full-width
-                    .fullwidthbanner-container
-                      .fullwidthbanner
-                        %ul
-                          %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                            =image_tag  "img/slides/wf_head.jpg", alt: ""
-                            .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "90"}
-                              %h1.wf-logo WILDFYRE
-                              .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "200", "data-y" => "290"}
-                                /
-                                  <button class="g-btn type_secondary size_big" href="#">
-                                  <span>
-                                  JOIN THE WILDFYRE NETWORK
-                                  <i class="icon-chevron-sign-right"></i>
-                                  </span>
-                                  </button>
-                                  
-                                  <!-- <div class="tile-wrapper">
-                                  <div class="slider-tile">
-                                  <i class="typcn typcn-leaf"></i>
-                                  <h5>Design  CODE 	 FINANCE</h5>
-                                  <div class="hr large-1 small-3"></div>
-                                  </div>
-              .l-submain
-                .l-submain-h.g-html
-                  .page-header.pad-bottom.text-center
-                    %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WE KNOW A LOT ABOUT A LOT"
-                    .hr.light.large-1.small-3
-                  .g-cols.intro-section{style: "margin-top: 40px;"}
-                    .one-fourth
-                      %h6 FINANCE
-                      %p We are financial wizards.
-                      %a{href: "overview_finance.html"}
-                        =image_tag "img/icons/v2/64/Keywords & Rankings.png", class: "center"
-                    .one-fourth
-                      %h6 CREATIVE
-                      %p We design stuff.
-                      %a{href: "overview_creative.html"}
-                        =image_tag "img/icons/v2/64/Creative Campaigns.png", class: "center"
-                    .one-fourth
-                      %h6 TECHNICAL
-                      %p We build Rails apps.
-                      %a{href: "overview_technical.html"}
-                        =image_tag "img/icons/v2/64/Responsive Design.png", class: "center"
-                    .one-fourth
-                      %h6 STRATEGY
-                      %p We help companies grow.
-                      %a{href: "overview_strategy.html"}
-                        =image_tag "img/icons/v2/64/SEO Training.png", class: "center"
-          / /MAIN
-      / /CANVAS
-      / FOOTER
-      .l-footer.type_normal
-        .l-footer-h{style: "background: #000;"}
-          / subfooter: bottom
-          .l-subfooter.at_bottom
-            .l-subfooter-h.i-cf
-              .w-copyright
-      / /FOOTER
-      %a.w-toplink{href: "#"}
-        %i.icon-angle-up
+%body.l-body.home
+/ CANVAS
+.l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
+  .l-canvas-h
+    / HEADER
+    .l-header
+      .l-header-h
+        .l-subheader.at_middle
+          .l-subheader-h.i-cf
+            /
+              <div class="w-logo">
+              <div class="w-logo-h">
+              <a class="w-logo-link" href="index.html">
+              <img class="w-logo-img" src="img/wf_logo.png" style="height: 80%; opacity: .75;" alt="WILDFYRE">
+              <span class="w-logo-title">
+              <span class="w-logo-title-h">WILDFYRE</span>
+              </span>
+              </a>
+              </div>
+              </div>
+            / SEARCH
+            .w-search.submit_inside
+              .w-search-h
+                %a.w-search-show{href: "javascript:void(0)"}
+                  %i.icon-search
+                %form.w-search-form.show_hidden{action: "#"}
+                  .w-search-input
+                    %input{placeholder: "enter the query", type: "text", value: ""}/
+                  .w-search-submit
+                    %input{type: "submit", value: "Search"}/
+                    %i.icon-search
+                  %a.w-search-close{href: "javascript:void(0)", title: "Close search"} ✕
+            / NAV
+            %nav.w-nav
+              .w-nav-h
+                .w-nav-control
+                  %i.icon-reorder
+                .w-nav-list.layout_hor.width_auto.float_right.level_1
+                  .w-nav-list-h
+                    .w-nav-item.level_1.with_sublevel.active
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "index.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Companies
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel.active
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "index.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Projects
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel.active
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "index.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Partners
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "about.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Network
+                          %span.w-nav-hint
+                    .w-nav-item.level_1.with_sublevel
+                      .w-nav-item-h
+                        %a.w-nav-anchor.level_1{href: "portfolio-3.html"}
+                          %span.w-nav-icon
+                            %i.icon-star
+                          %span.w-nav-title Ethos
+                          %span.w-nav-hint
+    / /HEADER
+    / MAIN
+    .l-main
+      .l-main-h
+        .l-submain.type_fullwidth.border_none
+          .l-submain-h.g-html
+            .g-cols
+              .full-width
+                .fullwidthbanner-container
+                  .fullwidthbanner
+                    %ul
+                      %li{"data-slotamount" => "7", "data-transition" => "fade"}
+                        =image_tag  "img/slides/wf_head.jpg", alt: ""
+                        .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "90"}
+                          %h1.wf-logo WILDFYRE
+                          .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "200", "data-y" => "290"}
+                            /
+                              <button class="g-btn type_secondary size_big" href="#">
+                              <span>
+                              JOIN THE WILDFYRE NETWORK
+                              <i class="icon-chevron-sign-right"></i>
+                              </span>
+                              </button>
+                              
+                              <!-- <div class="tile-wrapper">
+                              <div class="slider-tile">
+                              <i class="typcn typcn-leaf"></i>
+                              <h5>Design  CODE 	 FINANCE</h5>
+                              <div class="hr large-1 small-3"></div>
+                              </div>
+          .l-submain
+            .l-submain-h.g-html
+              .page-header.pad-bottom.text-center
+                %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WE KNOW A LOT ABOUT A LOT"
+                .hr.light.large-1.small-3
+              .g-cols.intro-section{style: "margin-top: 40px;"}
+                .one-fourth
+                  %h6 FINANCE
+                  %p We are financial wizards.
+                  %a{href: "overview_finance.html"}
+                    =image_tag "img/icons/v2/64/Keywords & Rankings.png", class: "center"
+                .one-fourth
+                  %h6 CREATIVE
+                  %p We design stuff.
+                  %a{href: "overview_creative.html"}
+                    =image_tag "img/icons/v2/64/Creative Campaigns.png", class: "center"
+                .one-fourth
+                  %h6 TECHNICAL
+                  %p We build Rails apps.
+                  %a{href: "overview_technical.html"}
+                    =image_tag "img/icons/v2/64/Responsive Design.png", class: "center"
+                .one-fourth
+                  %h6 STRATEGY
+                  %p We help companies grow.
+                  %a{href: "overview_strategy.html"}
+                    =image_tag "img/icons/v2/64/SEO Training.png", class: "center"
+      / /MAIN
+  / /CANVAS
+  / FOOTER
+  .l-footer.type_normal
+    .l-footer-h{style: "background: #000;"}
+      / subfooter: bottom
+      .l-subfooter.at_bottom
+        .l-subfooter-h.i-cf
+          .w-copyright
+  / /FOOTER
+  %a.w-toplink{href: "#"}
+    %i.icon-angle-up
