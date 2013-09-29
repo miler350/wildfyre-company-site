@@ -13,6 +13,7 @@ gem 'unicorn'
 gem 'devise', '3.0.0'
 gem 'fog',"~> 1.3.1" 
 gem 'carrierwave'
+gem 'haml-rails'
 
 
 # Use SCSS for stylesheets
