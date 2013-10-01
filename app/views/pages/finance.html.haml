@@ -1,58 +1,79 @@
+%link{href: "css/style.css", media: "all", rel: "stylesheet", type: "text/css"}/
 
-/ MAIN
-.l-main
-  .l-main-h
-    .l-submain.type_fullwidth.border_none
-      .l-submain-h.g-html
-        .g-cols
-          .full-width
-            .fullwidthbanner-container.condensed
-              .fullwidthbanner
-                %ul
-                  %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                    %img{alt: "", src: "img/slides/wf_head.jpg"}/
-                    .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
-                      %h1.wf-logo WILDFYRE
-      .l-submain
-        .l-submain-h.g-html
-          .page-header.pad-bottom.text-center
-            .box-heading
-              INVESTMENT BANKING/VC/PE/CAPITAL MARKETS/ASSET MGMT/OPS
-            %h1{style: "text-align: center;"} FINANCIAL WIZARDRY
-            .hr.large-1.small-3
-          .g-cols
-            .one-third
-              %h6 PIGSTY
-              %p We turn pigsties into piggy banks. We give your financials an oink-ment.
-            .two-thirds
-              %p.quote
-                It is a kind of spiritual snobbery that makes people think they can be happy without money.
-        .g-hr.type_long
-          %span.g-hr-h
-            %i.icon-arrow-down
-        .l-submain.color_primary{id: "", style: "background-image: url(img/slides/morgan-stanley.jpg);"}
+%script{src: "assets/jquery-1.9.1.js", type: "text/javascript"}
+%script{src: "assets/g-alert.js", type: "text/javascript"}
+%script{src: "assets/jquery.carousello.js", type: "text/javascript"}
+%script{src: "assets/jquery.flexslider.js", type: "text/javascript"}
+%script{src: "assets/jquery.isotope.js", type: "text/javascript"}
+%script{src: "assets/jquery.magnific-popup.js", type: "text/javascript"}
+%script{src: "assets/jquery.parallax.js", type: "text/javascript"}
+%script{src: "assets/jquery.simpleplaceholder.js", type: "text/javascript"}
+%script{src: "assets/jquery.smoothScroll.js", type: "text/javascript"}
+%script{src: "assets/jquery.themepunch.revolution.min.js", type: "text/javascript"}
+%script{src: "assets/plugins.js", type: "text/javascript"}
+%script{src: "assets/waypoints.min.js", type: "text/javascript"}
+%script{src: "assets/w-lang.js", type: "text/javascript"}
+%script{src: "assets/w-search.js", type: "text/javascript"}
+%script{src: "assets/w-tabs.js", type: "text/javascript"}
+%script{src: "assets/w-timeline.js", type: "text/javascript"}
+
+.l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
+  .l-canvas-h
+    / MAIN
+
+    .l-main
+      .l-main-h
+
+        .l-submain.type_fullwidth.border_none
           .l-submain-h.g-html
-            %h2
-            .g-hr.type_invisible
-              %span.g-hr-h
-                %i.icon-star
-        :javascript
-          jQuery(window).load(function(){ jQuery('#parallax_section').parallax('50%', '-1.2'); });
-        .l-submain{style: "padding-bottom: 0; border-top: none"}
-          .l-submain-h.g-html.i-cf
+            .g-cols
+              .full-width
+                .fullwidthbanner-container.condensed
+                  .fullwidthbanner
+                    %ul
+                      %li{"data-slotamount" => "7", "data-transition" => "fade"}
+                        %img{alt: "", src: "assets/slides/wf_head.jpg"}/
+                        .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
+                          %h1.wf-logo WILDFYRE
+        .l-submain
+          .l-submain-h.g-html
             .page-header.pad-bottom.text-center
-              %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WHY PEOPLE HIRE US"
-              .hr.light.large-1.small-3
+              .box-heading
+                INVESTMENT BANKING/VC/PE/CAPITAL MARKETS/ASSET MGMT/OPS
+              %h1{style: "text-align: center;"} FINANCIAL WIZARDRY
+              .hr.large-1.small-3
             .g-cols
               .one-third
-                %h4
-                  what we do
-              .one-third
-                %h6 CHILD'S PLAY
-                %p We crunch numbers with ease. To us, gawdy financial models are similar to picture books...child's play.
-              .one-third
-                %h6 TEACHER'S PET
-                %p We have a CFA charterholder and tutor trained to breakdown the difficult finance so that you can follow along. Bring the apple.
+                %h6 PIGSTY
+                %p We turn pigsties into piggy banks. We give your financials an oink-ment.
+              .two-thirds
+                %p.quote
+                  It is a kind of spiritual snobbery that makes people think they can be happy without money.
+          .g-hr.type_long
+            %span.g-hr-h
+              %i.icon-arrow-down
+          #parallax_section.l-submain.color_primary.with_parallax{style: "background-image: url(assets/slides/morgan-stanley.jpg);"}
+            .l-submain-h.g-html
+              %h2{style: "text-align: center;"}
+                %br/
+              %p{style: "text-align: center;"}
+          :javascript
+            jQuery(window).load(function(){ jQuery('#parallax_section').parallax('50%', '0.4'); });
+          .l-submain{style: "padding-bottom: 0; border-top: none"}
+            .l-submain-h.g-html.i-cf
+              .page-header.pad-bottom.text-center
+                %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WHY PEOPLE HIRE US"
+                .hr.light.large-1.small-3
+              .g-cols
+                .one-third
+                  %h4
+                    what we do
+                .one-third
+                  %h6 CHILD'S PLAY
+                  %p We crunch numbers with ease. To us, gawdy financial models are similar to picture books...child's play.
+                .one-third
+                  %h6 TEACHER'S PET
+                  %p We have a CFA charterholder and tutor trained to breakdown the difficult finance so that you can follow along. Bring the apple.
           .l-submain-h.g-html.i-cf
             .g-cols
               .one-third
@@ -68,23 +89,23 @@
                               %i.icon-reorder
                           .w-timeline-item.active
                             %span.w-timeline-item-bullet
-                            %img{alt: "Tit 3", src: "img/icons/V1/64/Affiliate Marketing.png"}/
+                            %img{alt: "Tit 3", src: "assets/icons/V1/64/Affiliate Marketing.png"}/
                             %h6 FINANCIAL MODELING
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            %img{alt: "Tit 2", src: "img/icons/V1/64/Keywords & Rankings.png", style: "height: 40%; width: 60px;"}/
+                            %img{alt: "Tit 2", src: "assets/icons/V1/64/Keywords & Rankings.png", style: "height: 40%; width: 60px;"}/
                             %h6 FINANCIAL ANALYSIS
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            %img{alt: "Tit 1", src: "img/icons/V1/64/Target Keywords.png"}/
+                            %img{alt: "Tit 1", src: "assets/icons/V1/64/Target Keywords.png"}/
                             %h6 INVESTMENT EVALUATIONS
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            %img{alt: "Tit 1", src: "img/icons/V1/64/Return On Investment.png"}/
+                            %img{alt: "Tit 1", src: "assets/icons/V1/64/Return On Investment.png"}/
                             %h6 ASSET MANAGEMENT
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            %img{alt: "Tit 1", src: "img/icons/V1/64/Conversion Optimization.png"}/
+                            %img{alt: "Tit 1", src: "assets/icons/V1/64/V1/64/Conversion Optimization.png"}/
                             %h6 PORTFOLIO ANALYSIS
                       .w-timeline-sections
                         .w-timeline-section.active.animate_afr
@@ -101,7 +122,7 @@
                                     %li Stategic/Decision Tree Model
                                     %li Forecasting
                                 .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                  %img{alt: "", src: "assets/placeholder/540x320.gif"}/
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "portfolio-3.html"}
                                       %span HIRE US
@@ -122,7 +143,7 @@
                                     %li Solvency
                                     %li Liquidity
                                 .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                  %img{alt: "", src: "assets/placeholder/540x320.gif"}/
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "portfolio-3.html"}
                                       %span HIRE US
@@ -143,7 +164,7 @@
                                     %li Exit Modeling & Plan
                                     %li Landscape Survey
                                 .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                  %img{alt: "", src: "assets/placeholder/540x320.gif"}/
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "portfolio-3.html"}
                                       %span HIRE US
@@ -164,7 +185,7 @@
                                     %li Real Estate
                                     %li Forex
                                 .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                  %img{alt: "", src: "assets/placeholder/540x320.gif"}/
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "portfolio-3.html"}
                                       %span HIRE US
@@ -185,7 +206,7 @@
                                     %li Exit Modelling
                                     %li Company appraisal
                                 .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
+                                  %img{alt: "", src: "assets/placeholder/540x320.gif"}/
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "portfolio-3.html"}
                                       %span HIRE US

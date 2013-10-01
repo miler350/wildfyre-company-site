@@ -1,217 +1,237 @@
+%script{src: "assets/jquery-1.9.1.js", type: "text/javascript"}
+%script{src: "assets/g-alert.js", type: "text/javascript"}
+%script{src: "assets/jquery.carousello.js", type: "text/javascript"}
+%script{src: "assets/jquery.flexslider.js", type: "text/javascript"}
+%script{src: "assets/jquery.isotope.js", type: "text/javascript"}
+%script{src: "assets/jquery.magnific-popup.js", type: "text/javascript"}
+%script{src: "assets/jquery.parallax.js", type: "text/javascript"}
+%script{src: "assets/jquery.simpleplaceholder.js", type: "text/javascript"}
+%script{src: "assets/jquery.smoothScroll.js", type: "text/javascript"}
+%script{src: "assets/jquery.themepunch.revolution.min.js", type: "text/javascript"}
+%script{src: "assets/plugins.js", type: "text/javascript"}
+%script{src: "assets/waypoints.min.js", type: "text/javascript"}
+%script{src: "assets/w-lang.js", type: "text/javascript"}
+%script{src: "assets/w-search.js", type: "text/javascript"}
+%script{src: "assets/w-tabs.js", type: "text/javascript"}
+%script{src: "assets/w-timeline.js", type: "text/javascript"}
 
+.l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
+  .l-canvas-h
+    / MAIN
 
-/ MAIN
-.l-main
-  .l-main-h
-    .l-submain.type_fullwidth.border_none
-      .l-submain-h.g-html
-        .g-cols
-          .full-width
-            .fullwidthbanner-container.condensed
-              .fullwidthbanner
-                %ul
-                  %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                    %img{alt: "", src: "img/slides/wf_head.jpg"}/
-                    .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
-                      %h1.wf-logo WILDFYRE
-      .l-submain
-        .l-submain-h.g-html
-          .page-header.pad-bottom.text-center
-            .box-heading
-              CORP STRUCTURE/TAX/LEGAL/ACCOUNTING/COMPLIANCE/HR/COMMUNICATION/MARKETING
-            %h1{style: "text-align: center;"} CALCULATED STRATEGY
-            .hr.large-1.small-3
-          .g-cols
-            .one-third
-              %h6 THE BIG DIPPER
-              %p Similar to constellations, we provide high level navigation. Strategizing creates a compass with possible business directions.
-            .two-thirds
-              %p.quote.long
-                "You are either growing or you're dying. There just ain't no third direction." - Tom Callahan
-        .g-hr.type_long
-          %span.g-hr-h
-            %i.icon-arrow-down
-        #parallax_section.l-submain.color_primary{style: "background-image: url(img/slides/research_agenda.jpg);"}
+    .l-main
+      .l-main-h
+
+        .l-submain.type_fullwidth.border_none
           .l-submain-h.g-html
-            %h2
-            .g-hr.type_invisible
-              %span.g-hr-h
-                %i.icon-star
-        :javascript
-          jQuery(window).load(function(){ jQuery('#parallax_section').parallax('50%', '-1.2'); });
-        .l-submain{style: "padding-bottom: 0; border-top: none"}
-          .l-submain-h.g-html.i-cf
+            .g-cols
+              .full-width
+                .fullwidthbanner-container.condensed
+                  .fullwidthbanner
+                    %ul
+                      %li{"data-slotamount" => "7", "data-transition" => "fade"}
+                        %img{alt: "", src: "assets/slides/wf_head.jpg"}/
+                        .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
+                          %h1.wf-logo WILDFYRE
+
+        .l-submain
+          .l-submain-h.g-html
             .page-header.pad-bottom.text-center
-              %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WHY PEOPLE HIRE US"
-              .hr.light.large-1.small-3
+              .box-heading
+                CORP STRUCTURE/TAX/LEGAL/ACCOUNTING/COMPLIANCE/HR/COMMUNICATION/MARKETING
+              %h1{style: "text-align: center;"} CALCULATED STRATEGY
+              .hr.large-1.small-3
             .g-cols
               .one-third
-                %h4
-                  what we do
-              .one-third
-                %h6 BASES LOADED
-                %p Founded on wit, fueled by competitive drive, we're former athletes that make sure to cover all the bases.
-              .one-third
-                %h6 PAWN, MEET QUEEN
-                %p Business is similar to chess. It's competitive, it's evolving, and it involves thinking many steps ahead. Checkmate.
-          .l-submain-h.g-html.i-cf
-            .g-cols
-              .one-third
-                Testimonials
+                %h6 THE BIG DIPPER
+                %p Similar to constellations, we provide high level navigation. Strategizing creates a compass with possible business directions.
               .two-thirds
-                .animate_wfc
-                  .w-timeline
-                    .w-timeline-h
-                      .w-timeline-list
-                        .w-timeline-list-h
-                          .g-hr.type_short
-                            %span.g-hr-h
-                              %i.icon-reorder
-                          .w-timeline-item.active
-                            %span.w-timeline-item-bullet
-                            %img{alt: "Tit 3", src: "img/icons/V1/64/Web Development.png"}/
-                            %h6 corporate structure
-                          .w-timeline-item
-                            %span.w-timeline-item-bullet
-                            %img{src: "img/icons/V1/64/Support Services.png"}/
-                            %h6 tax/legal advisory
-                          .w-timeline-item
-                            %span.w-timeline-item-bullet
-                            %img{alt: "Tit 1", src: "img/icons/V1/64/Social Media Marketing.png"}/
-                            %h6 human resources
-                          .w-timeline-item
-                            %span.w-timeline-item-bullet
-                            %img{alt: "Tit 1", src: "img/icons/V1/64/Content Management.png"}/
-                            %h6 knowledge management
-                          .w-timeline-item
-                            %span.w-timeline-item-bullet
-                            %img{alt: "Tit 1", src: "img/icons/V1/64/Viral Marketing.png"}/
-                            %h6 corporate marketing
-                      .w-timeline-sections
-                        .w-timeline-section.active.animate_afr
-                          .w-timeline-section-h
-                            .w-timeline-section-content
-                              .g-cols
-                                .two-thirds
-                                  %h4 corporate structure
-                                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                  %ul
-                                    %li Incorporation Advice
-                                    %li State-by-State Business Analysis
-                                    %li Legal Documents
-                                    %li Ownership/Company Share Records
-                                    %li Company appraisal
-                                .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                  %p{style: "text-align: center;"}
-                                    %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                      %span HIRE US
-                        .w-timeline-section
-                          .w-timeline-section-h
-                            .w-timeline-section-title
-                              %span.w-timeline-section-title-bullet
-                              %span.w-timeline-section-title-text 2010
-                            .w-timeline-section-content
-                              .g-cols
-                                .two-thirds
-                                  %h4 tax/legal advisory
-                                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                  %ul
-                                    %li Strategic Planning
-                                    %li Human Capital Tax
-                                    %li Due Diligence
-                                    %li Exit Modelling
-                                    %li Company appraisal
-                                .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                  %p{style: "text-align: center;"}
-                                    %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                      %span HIRE US
-                        .w-timeline-section
-                          .w-timeline-section-h
-                            .w-timeline-section-title
-                              %span.w-timeline-section-title-bullet
-                              %span.w-timeline-section-title-text 2011
-                            .w-timeline-section-content
-                              .g-cols
-                                .two-thirds
-                                  %h4 human resources
-                                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                  %ul
-                                    %li Ensure Compliance
-                                    %li Contain Labor Costs
-                                    %li Key Employee Retainment
-                                    %li Management Training
-                                    %li Company appraisal
-                                .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                  %p{style: "text-align: center;"}
-                                    %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                      %span HIRE US
-                        .w-timeline-section
-                          .w-timeline-section-h
-                            .w-timeline-section-title
-                              %span.w-timeline-section-title-bullet
-                              %span.w-timeline-section-title-text 2012
-                            .w-timeline-section-content
-                              .g-cols
-                                .two-thirds
-                                  %h4 knowledge management
-                                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                  %ul
-                                    %li Returns Analysis
-                                    %li Investment "ft" review
-                                    %li Due Diligence
-                                    %li Exit Modelling
-                                    %li Company appraisal
-                                .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                  %p{style: "text-align: center;"}
-                                    %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                      %span HIRE US
-                        .w-timeline-section
-                          .w-timeline-section-h
-                            .w-timeline-section-title
-                              %span.w-timeline-section-title-bullet
-                              %span.w-timeline-section-title-text 2013
-                            .w-timeline-section-content
-                              .g-cols
-                                .two-thirds
-                                  %h4 corporate marketing
-                                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
-                                  %ul
-                                    %li Returns Analysis
-                                    %li Investment "ft" review
-                                    %li Social Media
-                                    %li Exit Modelling
-                                    %li Company appraisal
-                                .one-third
-                                  %img{alt: "", src: "img/placeholder/540x320.gif"}/
-                                  %p{style: "text-align: center;"}
-                                    %a.g-btn.type_outline{href: "portfolio-3.html"}
-                                      %span HIRE US
-          .l-submain
+                %p.quote.long
+                  "You are either growing or you're dying. There just ain't no third direction." - Tom Callahan
+          .g-hr.type_long
+            %span.g-hr-h
+              %i.icon-arrow-down
+          #parallax_section.l-submain.color_primary{style: "background-image: url(assets/slides/research_agenda.jpg);"}
             .l-submain-h.g-html
+              %h2
+              .g-hr.type_invisible
+                %span.g-hr-h
+                  %i.icon-star
+          :javascript
+            jQuery(window).load(function(){ jQuery('#parallax_section').parallax('50%', '-1.2'); });
+          .l-submain{style: "padding-bottom: 0; border-top: none"}
+            .l-submain-h.g-html.i-cf
               .page-header.pad-bottom.text-center
-                .box-heading
-                  WE KNOW A LOT... WE DO A LOT
-                %h1{style: "text-align: center;"} HIRE US
-                .hr.large-1.small-3
+                %h1{style: "text-align: center; letter-spacing: 5px; word-spacing: 5px; font-size: 200%; color: #ccc;"} "WHY PEOPLE HIRE US"
+                .hr.light.large-1.small-3
               .g-cols
                 .one-third
-                  %p
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur autem
-                    dicta doloremque eaque eum, facilis maxime, pariatur reiciendis rem saepe ullam
-                    ut voluptate, voluptates.
+                  %h4
+                    what we do
                 .one-third
-                  %p
-                    At delectus doloremque dolores explicabo laudantium minima qui. Animi aperiam
-                    aspernatur atque debitis distinctio impedit inventore iure labore modi omnis,
-                    optio rerum ut veritatis voluptatum?
+                  %h6 BASES LOADED
+                  %p Founded on wit, fueled by competitive drive, we're former athletes that make sure to cover all the bases.
                 .one-third
-                  %p
-                    Accusamus et hic inventore iure iusto modi reprehenderit soluta. Aliquam,
-                    assumenda at consequuntur cumque, enim, explicabo iusto libero maiores nisi
-                    numquam odio porro praesentium quis.
-  / /MAIN
-/ /CANVAS
+                  %h6 PAWN, MEET QUEEN
+                  %p Business is similar to chess. It's competitive, it's evolving, and it involves thinking many steps ahead. Checkmate.
+            .l-submain-h.g-html.i-cf
+              .g-cols
+                .one-third
+                  Testimonials
+                .two-thirds
+                  .animate_wfc
+                    .w-timeline
+                      .w-timeline-h
+                        .w-timeline-list
+                          .w-timeline-list-h
+                            .g-hr.type_short
+                              %span.g-hr-h
+                                %i.icon-reorder
+                            .w-timeline-item.active
+                              %span.w-timeline-item-bullet
+                              %img{alt: "Tit 3", src: "assets/icons/V1/64/Web Development.png"}/
+                              %h6 corporate structure
+                            .w-timeline-item
+                              %span.w-timeline-item-bullet
+                              %img{src: "assets/icons/V1/64/Support Services.png"}/
+                              %h6 tax/legal advisory
+                            .w-timeline-item
+                              %span.w-timeline-item-bullet
+                              %img{alt: "Tit 1", src: "assets/icons/V1/64/Social Media Marketing.png"}/
+                              %h6 human resources
+                            .w-timeline-item
+                              %span.w-timeline-item-bullet
+                              %img{alt: "Tit 1", src: "assets/icons/V1/64/Content Management.png"}/
+                              %h6 knowledge management
+                            .w-timeline-item
+                              %span.w-timeline-item-bullet
+                              %img{alt: "Tit 1", src: "assets/icons/V1/64/Viral Marketing.png"}/
+                              %h6 corporate marketing
+                        .w-timeline-sections
+                          .w-timeline-section.active.animate_afr
+                            .w-timeline-section-h
+                              .w-timeline-section-content
+                                .g-cols
+                                  .two-thirds
+                                    %h4 corporate structure
+                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                    %ul
+                                      %li Incorporation Advice
+                                      %li State-by-State Business Analysis
+                                      %li Legal Documents
+                                      %li Ownership/Company Share Records
+                                      %li Company appraisal
+                                  .one-third
+                                    %img{alt: "", src: "assets/placeholder/540x320.gif"}/
+                                    %p{style: "text-align: center;"}
+                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                        %span HIRE US
+                          .w-timeline-section
+                            .w-timeline-section-h
+                              .w-timeline-section-title
+                                %span.w-timeline-section-title-bullet
+                                %span.w-timeline-section-title-text 2010
+                              .w-timeline-section-content
+                                .g-cols
+                                  .two-thirds
+                                    %h4 tax/legal advisory
+                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                    %ul
+                                      %li Strategic Planning
+                                      %li Human Capital Tax
+                                      %li Due Diligence
+                                      %li Exit Modelling
+                                      %li Company appraisal
+                                  .one-third
+                                    %img{alt: "", src: "assets/placeholder/540x320.gif"}/
+                                    %p{style: "text-align: center;"}
+                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                        %span HIRE US
+                          .w-timeline-section
+                            .w-timeline-section-h
+                              .w-timeline-section-title
+                                %span.w-timeline-section-title-bullet
+                                %span.w-timeline-section-title-text 2011
+                              .w-timeline-section-content
+                                .g-cols
+                                  .two-thirds
+                                    %h4 human resources
+                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                    %ul
+                                      %li Ensure Compliance
+                                      %li Contain Labor Costs
+                                      %li Key Employee Retainment
+                                      %li Management Training
+                                      %li Company appraisal
+                                  .one-third
+                                    %img{alt: "", src: "assets/placeholder/540x320.gif"}/
+                                    %p{style: "text-align: center;"}
+                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                        %span HIRE US
+                          .w-timeline-section
+                            .w-timeline-section-h
+                              .w-timeline-section-title
+                                %span.w-timeline-section-title-bullet
+                                %span.w-timeline-section-title-text 2012
+                              .w-timeline-section-content
+                                .g-cols
+                                  .two-thirds
+                                    %h4 knowledge management
+                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                    %ul
+                                      %li Returns Analysis
+                                      %li Investment "ft" review
+                                      %li Due Diligence
+                                      %li Exit Modelling
+                                      %li Company appraisal
+                                  .one-third
+                                    %img{alt: "", src: "assets/placeholder/540x320.gif"}/
+                                    %p{style: "text-align: center;"}
+                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                        %span HIRE US
+                          .w-timeline-section
+                            .w-timeline-section-h
+                              .w-timeline-section-title
+                                %span.w-timeline-section-title-bullet
+                                %span.w-timeline-section-title-text 2013
+                              .w-timeline-section-content
+                                .g-cols
+                                  .two-thirds
+                                    %h4 corporate marketing
+                                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                    %ul
+                                      %li Returns Analysis
+                                      %li Investment "ft" review
+                                      %li Social Media
+                                      %li Exit Modelling
+                                      %li Company appraisal
+                                  .one-third
+                                    %img{alt: "", src: "assets/placeholder/540x320.gif"}/
+                                    %p{style: "text-align: center;"}
+                                      %a.g-btn.type_outline{href: "portfolio-3.html"}
+                                        %span HIRE US
+            .l-submain
+              .l-submain-h.g-html
+                .page-header.pad-bottom.text-center
+                  .box-heading
+                    WE KNOW A LOT... WE DO A LOT
+                  %h1{style: "text-align: center;"} HIRE US
+                  .hr.large-1.small-3
+                .g-cols
+                  .one-third
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur autem
+                      dicta doloremque eaque eum, facilis maxime, pariatur reiciendis rem saepe ullam
+                      ut voluptate, voluptates.
+                  .one-third
+                    %p
+                      At delectus doloremque dolores explicabo laudantium minima qui. Animi aperiam
+                      aspernatur atque debitis distinctio impedit inventore iure labore modi omnis,
+                      optio rerum ut veritatis voluptatum?
+                  .one-third
+                    %p
+                      Accusamus et hic inventore iure iusto modi reprehenderit soluta. Aliquam,
+                      assumenda at consequuntur cumque, enim, explicabo iusto libero maiores nisi
+                      numquam odio porro praesentium quis.
+    / /MAIN
+  / /CANVAS

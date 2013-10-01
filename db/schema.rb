@@ -65,15 +65,6 @@ ActiveRecord::Schema.define(version: 20130828015239) do
     t.text     "content"
   end
 
-  create_table "photos", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "image"
-    t.integer  "user_id"
-  end
-
-  add_index "photos", ["user_id"], name: "index_photos_on_user_id", using: :btree
-
   create_table "projects", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
