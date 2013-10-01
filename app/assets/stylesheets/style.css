@@ -9397,7 +9397,7 @@ width: 8.33333%;
 position: relative;
 width: 8.33333%;
 }
-
+}
 
 .g-html h1.wf-logo {
 	font-size: 15em;
@@ -9417,8 +9417,7 @@ font-size: 1em;
 
 
 .w-gallery-tnail-img {
-padding: 5px;
-height: 
+padding: 5px; 
 }
 
  img.w-gallery-tnail-img.img-reduce-sz{
