@@ -14,6 +14,7 @@ gem 'devise', '3.0.0'
 gem 'fog',"~> 1.3.1" 
 gem 'carrierwave'
 gem 'haml-rails'
+gem 'aws-sdk'
 
 
 # Use SCSS for stylesheets
