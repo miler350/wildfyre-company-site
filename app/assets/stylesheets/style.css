@@ -10855,3 +10855,7 @@ color: #222;
  .w-timeline-list:before, .w-timeline.type_vertical .w-timeline-section:before {
 	background-color: #fff;
 }
+
+#parallax_section.l-submain.color_primary.strategy {
+ background: url(research_agenda.jpg);
+ }
