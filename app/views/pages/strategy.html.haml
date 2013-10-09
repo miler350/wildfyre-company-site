@@ -1,19 +1,21 @@
-%script{src: "assets/jquery-1.9.1.js", type: "text/javascript"}
-%script{src: "assets/g-alert.js", type: "text/javascript"}
-%script{src: "assets/jquery.carousello.js", type: "text/javascript"}
-%script{src: "assets/jquery.flexslider.js", type: "text/javascript"}
-%script{src: "assets/jquery.isotope.js", type: "text/javascript"}
-%script{src: "assets/jquery.magnific-popup.js", type: "text/javascript"}
-%script{src: "assets/jquery.parallax.js", type: "text/javascript"}
-%script{src: "assets/jquery.simpleplaceholder.js", type: "text/javascript"}
-%script{src: "assets/jquery.smoothScroll.js", type: "text/javascript"}
-%script{src: "assets/jquery.themepunch.revolution.min.js", type: "text/javascript"}
-%script{src: "assets/plugins.js", type: "text/javascript"}
-%script{src: "assets/waypoints.min.js", type: "text/javascript"}
-%script{src: "assets/w-lang.js", type: "text/javascript"}
-%script{src: "assets/w-search.js", type: "text/javascript"}
-%script{src: "assets/w-tabs.js", type: "text/javascript"}
-%script{src: "assets/w-timeline.js", type: "text/javascript"}
+%link{href: "/css/style.css", media: "all", rel: "stylesheet", type: "text/css"}/
+
+%script{src: "/js/jquery-1.9.1.js", type: "text/javascript"}
+%script{src: "/js/g-alert.js", type: "text/javascript"}
+%script{src: "/js/jquery.carousello.js", type: "text/javascript"}
+%script{src: "/js/jquery.flexslider.js", type: "text/javascript"}
+%script{src: "/js/jquery.isotope.js", type: "text/javascript"}
+%script{src: "/js/jquery.magnific-popup.js", type: "text/javascript"}
+%script{src: "/js/jquery.parallax.js", type: "text/javascript"}
+%script{src: "/js/jquery.simpleplaceholder.js", type: "text/javascript"}
+%script{src: "/js/jquery.smoothScroll.js", type: "text/javascript"}
+%script{src: "/js/jquery.themepunch.revolution.min.js", type: "text/javascript"}
+%script{src: "/js/plugins.js", type: "text/javascript"}
+%script{src: "/js/waypoints.min.js", type: "text/javascript"}
+%script{src: "/js/w-lang.js", type: "text/javascript"}
+%script{src: "/js/w-search.js", type: "text/javascript"}
+%script{src: "/js/w-tabs.js", type: "text/javascript"}
+%script{src: "/js/w-timeline.js", type: "text/javascript"}
 
 .l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
   .l-canvas-h
@@ -30,7 +32,7 @@
                   .fullwidthbanner
                     %ul
                       %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                        =image_tag  "wf_head.jpg", alt: ""
+                        %img{src: "/img/wf_head.jpg", alt: ""}
                         .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
                           %h1.wf-logo WILDFYRE
 
@@ -51,7 +53,7 @@
           .g-hr.type_long
             %span.g-hr-h
               %i.icon-arrow-down
-          #parallax_section.l-submain.color_primary{style: "background-image: url(assets/images/research_agenda.jpg);"}
+          #parallax_section.l-submain.color_primary{style: "background-image: url(/img/research_agenda.jpg);"}
             .l-submain-h.g-html
               %h2
               .g-hr.type_invisible
@@ -89,23 +91,23 @@
                                 %i.icon-reorder
                             .w-timeline-item.active
                               %span.w-timeline-item-bullet
-                              =image_tag "icon_web-development_v1_64.png"
+                              %img{src: "/img/icon_web-development_v1_64.png"}
                               %h6 corporate structure
                             .w-timeline-item
                               %span.w-timeline-item-bullet
-                              =image_tag "icon_support-services_v1_64.png"
+                              %img{src: "/img/icon_support-services_v1_64.png"}
                               %h6 tax/legal advisory
                             .w-timeline-item
                               %span.w-timeline-item-bullet
-                              =image_tag "icon_social-media-marketing_v1_64.png"
+                              %img{src: "/img/icon_social-media-marketing_v1_64.png"}
                               %h6 human resources
                             .w-timeline-item
                               %span.w-timeline-item-bullet
-                              =image_tag "icon_content-management_v1_64.png"
+                              %img{src: "/img/icon_content-management_v1_64.png"}
                               %h6 knowledge management
                             .w-timeline-item
                               %span.w-timeline-item-bullet
-                              =image_tag "icon_viral-marketing_v1_64.png"
+                              %img{src: "/img/icon_viral-marketing_v1_64.png"}
                               %h6 corporate marketing
                         .w-timeline-sections
                           .w-timeline-section.active.animate_afr
@@ -122,7 +124,7 @@
                                       %li Ownership/Company Share Records
                                       %li Company appraisal
                                   .one-third
-                                    =image_tag "540x320.gif"
+                                    %img{src: "/img/540x320.gif"}
                                     %p{style: "text-align: center;"}
                                       %a.g-btn.type_outline{href: "#"}
                                         %span HIRE US
@@ -143,7 +145,7 @@
                                       %li Exit Modelling
                                       %li Company appraisal
                                   .one-third
-                                    =image_tag "540x320.gif"
+                                    %img{src: "/img/540x320.gif"}
                                     %p{style: "text-align: center;"}
                                       %a.g-btn.type_outline{href: "#"}
                                         %span HIRE US
@@ -164,7 +166,7 @@
                                       %li Management Training
                                       %li Company appraisal
                                   .one-third
-                                    =image_tag "540x320.gif"
+                                    %img{src: "/img/540x320.gif"}
                                     %p{style: "text-align: center;"}
                                       %a.g-btn.type_outline{href: "#"}
                                         %span HIRE US
@@ -185,7 +187,7 @@
                                       %li Exit Modelling
                                       %li Company appraisal
                                   .one-third
-                                    =image_tag "540x320.gif"
+                                    %img{src: "/img/540x320.gif"}
                                     %p{style: "text-align: center;"}
                                       %a.g-btn.type_outline{href: "#"}
                                         %span HIRE US
@@ -206,7 +208,7 @@
                                       %li Exit Modelling
                                       %li Company appraisal
                                   .one-third
-                                    =image_tag "540x320.gif"
+                                    %img{src: "/img/540x320.gif"}
                                     %p{style: "text-align: center;"}
                                       %a.g-btn.type_outline{href: "#"}
                                         %span HIRE US

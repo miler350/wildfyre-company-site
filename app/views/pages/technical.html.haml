@@ -1,21 +1,21 @@
-%link{href: "css/style.css", media: "all", rel: "stylesheet", type: "text/css"}/
+%link{href: "/css/style.css", media: "all", rel: "stylesheet", type: "text/css"}/
 
-%script{src: "assets/jquery-1.9.1.js", type: "text/javascript"}
-%script{src: "assets/g-alert.js", type: "text/javascript"}
-%script{src: "assets/jquery.carousello.js", type: "text/javascript"}
-%script{src: "assets/jquery.flexslider.js", type: "text/javascript"}
-%script{src: "assets/jquery.isotope.js", type: "text/javascript"}
-%script{src: "assets/jquery.magnific-popup.js", type: "text/javascript"}
-%script{src: "assets/jquery.parallax.js", type: "text/javascript"}
-%script{src: "assets/jquery.simpleplaceholder.js", type: "text/javascript"}
-%script{src: "assets/jquery.smoothScroll.js", type: "text/javascript"}
-%script{src: "assets/jquery.themepunch.revolution.min.js", type: "text/javascript"}
-%script{src: "assets/plugins.js", type: "text/javascript"}
-%script{src: "assets/waypoints.min.js", type: "text/javascript"}
-%script{src: "assets/w-lang.js", type: "text/javascript"}
-%script{src: "assets/w-search.js", type: "text/javascript"}
-%script{src: "assets/w-tabs.js", type: "text/javascript"}
-%script{src: "assets/w-timeline.js", type: "text/javascript"}
+%script{src: "/js/jquery-1.9.1.js", type: "text/javascript"}
+%script{src: "/js/g-alert.js", type: "text/javascript"}
+%script{src: "/js/jquery.carousello.js", type: "text/javascript"}
+%script{src: "/js/jquery.flexslider.js", type: "text/javascript"}
+%script{src: "/js/jquery.isotope.js", type: "text/javascript"}
+%script{src: "/js/jquery.magnific-popup.js", type: "text/javascript"}
+%script{src: "/js/jquery.parallax.js", type: "text/javascript"}
+%script{src: "/js/jquery.simpleplaceholder.js", type: "text/javascript"}
+%script{src: "/js/jquery.smoothScroll.js", type: "text/javascript"}
+%script{src: "/js/jquery.themepunch.revolution.min.js", type: "text/javascript"}
+%script{src: "/js/plugins.js", type: "text/javascript"}
+%script{src: "/js/waypoints.min.js", type: "text/javascript"}
+%script{src: "/js/w-lang.js", type: "text/javascript"}
+%script{src: "/js/w-search.js", type: "text/javascript"}
+%script{src: "/js/w-tabs.js", type: "text/javascript"}
+%script{src: "/js/w-timeline.js", type: "text/javascript"}
 
 .l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
   .l-canvas-h
@@ -32,7 +32,7 @@
                   .fullwidthbanner
                     %ul
                       %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                        =image_tag  "wf_head.jpg", alt: ""
+                        %img{src: "/img/wf_head.jpg", alt: ""}
                         .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y" => "0"}
                           %h1.wf-logo WILDFYRE
         .l-submain
@@ -52,7 +52,7 @@
           .g-hr.type_long
             %span.g-hr-h
               %i.icon-arrow-down
-          #parallax_section.l-submain.color_primary.with_parallax{style: "background-image: url(assets/images/morgan-stanley.jpg);"}
+          #parallax_section.l-submain.color_primary.with_parallax{style: "background-image: url(/img/research_agenda.jpg);"}
             .l-submain-h.g-html
               %h2{style: "text-align: center;"}
                 %br/
@@ -90,23 +90,23 @@
                               %i.icon-reorder
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            =image_tag "icon_responsive-design_v1_64.png"
+                            %img{src: "/img/icon_responsive-design_v1_64.png"}
                             %h6 WEB/MOBILE DEVELOPMENT
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            =image_tag "icon_social-media-cloud_v1_64.png"
+                            %img{src: "/img/icon_social-media-cloud_v1_64.png"}
                             %h6 SYSTEMS ADMIN
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            =image_tag "icon_services-packages_v1_64.png"
+                            %img{src: "/img/icon_services-packages_v1_64.png"}
                             %h6 Third-Party Integrations
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            =image_tag "icon_e-mail-marketing_v1_64.png"
+                            %img{src: "/img/icon_e-mail-marketing_v1_64.png"}
                             %h6 E-mail marketing
                           .w-timeline-item
                             %span.w-timeline-item-bullet
-                            =image_tag "icon_local-SEO_v1_64.png"
+                            %img{src: "/img/icon_local-SEO_v1_64.png"}
                             %h6 SEO OPTIMIZATION
                       .w-timeline-sections
                         .w-timeline-section.active.animate_afr
@@ -123,7 +123,7 @@
                                     %li SQL
                                     %li Test Driven Development (TDD)
                                 .one-third
-                                  =image_tag "540x320.gif"
+                                  %img{src: "/img/540x320.gif", alt: ""}
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "#"}
                                       %span HIRE US
@@ -144,7 +144,7 @@
                                     %li Network & Server Installation and Maintenance
                                     %li Hardware & Software Installation and Maintenance
                                 .one-third
-                                  re
+                                  %img{src: "/img/540x320.gif", alt: ""}
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "#"}
                                       %span HIRE US
@@ -165,7 +165,7 @@
                                     %li Form Building & Lead Capture
                                     %li Customer Relationship Management System
                                 .one-third
-                                  =image_tag "540x320.gif"
+                                  %img{src: "/img/540x320.gif", alt: ""}
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "#"}
                                       %span HIRE US
@@ -186,7 +186,7 @@
                                     %li ROI tracking
                                     %li Drive Repeat Business
                                 .one-third
-                                  =image_tag "540x320.gif"
+                                  %img{src: "/img/540x320.gif", alt: ""}
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "#"}
                                       %span HIRE US
@@ -207,7 +207,7 @@
                                     %li Search Analytics
                                     %li Keyword Content Generation
                                 .one-third
-                                  =image_tag "540x320.gif"
+                                  %img{src: "/img/540x320.gif", alt: ""}
                                   %p{style: "text-align: center;"}
                                     %a.g-btn.type_outline{href: "#"}
                                       %span HIRE US

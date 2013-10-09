@@ -1,21 +1,21 @@
-%link{href: "css/style.css", media: "all", rel: "stylesheet", type: "text/css"}/
+%link{href: "/css/style.css", media: "all", rel: "stylesheet", type: "text/css"}/
 
-%script{src: "assets/jquery-1.9.1.js", type: "text/javascript"}
-%script{src: "assets/g-alert.js", type: "text/javascript"}
-%script{src: "assets/jquery.carousello.js", type: "text/javascript"}
-%script{src: "assets/jquery.flexslider.js", type: "text/javascript"}
-%script{src: "assets/jquery.isotope.js", type: "text/javascript"}
-%script{src: "assets/jquery.magnific-popup.js", type: "text/javascript"}
-%script{src: "assets/jquery.parallax.js", type: "text/javascript"}
-%script{src: "assets/jquery.simpleplaceholder.js", type: "text/javascript"}
-%script{src: "assets/jquery.smoothScroll.js", type: "text/javascript"}
-%script{src: "assets/jquery.themepunch.revolution.min.js", type: "text/javascript"}
-%script{src: "assets/plugins.js", type: "text/javascript"}
-%script{src: "assets/waypoints.min.js", type: "text/javascript"}
-%script{src: "assets/w-lang.js", type: "text/javascript"}
-%script{src: "assets/w-search.js", type: "text/javascript"}
-%script{src: "assets/w-tabs.js", type: "text/javascript"}
-%script{src: "assets/w-timeline.js", type: "text/javascript"}
+%script{src: "/js/jquery-1.9.1.js", type: "text/javascript"}
+%script{src: "/js/g-alert.js", type: "text/javascript"}
+%script{src: "/js/jquery.carousello.js", type: "text/javascript"}
+%script{src: "/js/jquery.flexslider.js", type: "text/javascript"}
+%script{src: "/js/jquery.isotope.js", type: "text/javascript"}
+%script{src: "/js/jquery.magnific-popup.js", type: "text/javascript"}
+%script{src: "/js/jquery.parallax.js", type: "text/javascript"}
+%script{src: "/js/jquery.simpleplaceholder.js", type: "text/javascript"}
+%script{src: "/js/jquery.smoothScroll.js", type: "text/javascript"}
+%script{src: "/js/jquery.themepunch.revolution.min.js", type: "text/javascript"}
+%script{src: "/js/plugins.js", type: "text/javascript"}
+%script{src: "/js/waypoints.min.js", type: "text/javascript"}
+%script{src: "/js/w-lang.js", type: "text/javascript"}
+%script{src: "/js/w-search.js", type: "text/javascript"}
+%script{src: "/js/w-tabs.js", type: "text/javascript"}
+%script{src: "/js/w-timeline.js", type: "text/javascript"}
 
 .l-canvas.type_wide.col_cont.headerpos_fixed.headertype_extended
   .l-canvas-h
@@ -30,7 +30,7 @@
                   .fullwidthbanner
                     %ul
                       %li{"data-slotamount" => "7", "data-transition" => "fade"}
-                        =image_tag  "slides/wf_head.jpg", alt: ""
+                        %img{src: "/img/wf_head.jpg", alt: ""}
                         .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "-70", "data-y"=> "90"}
                           %h1.wf-logo WILDFYRE
                           .caption.sfb{"data-easing" => "easeInOutSine", "data-speed" => "400", "data-start" => "400", "data-x" => "200", "data-y" => "290"}
@@ -58,19 +58,19 @@
               .one-fourth
                 %h6 FINANCE
                 %p We are financial wizards.
-                =link_to image_tag("icons/V2/64/Keywords & Rankings.png", class: "center"), finance_path
+                =link_to image_tag("/img/icons/V2/64/Keywords & Rankings.png", class: "center"), creative_path
               .one-fourth
                 %h6 CREATIVE
                 %p We design stuff.
-                =link_to image_tag("icons/V2/64/Creative Campaigns.png", class: "center"), creative_path
+                =link_to image_tag("/img/icons/V2/64/Creative Campaigns.png", class: "center"), creative_path
               .one-fourth
                 %h6 TECHNICAL
                 %p We build Rails apps.
-                = link_to image_tag("icons/V2/64/Responsive Design.png", class: "center"), technical_path
+                = link_to image_tag("/img/icons/V2/64/Responsive Design.png", class: "center"), technical_path
               .one-fourth
                 %h6 STRATEGY
                 %p We help companies grow.
-                = link_to image_tag("icons/V2/64/SEO Training.png", class: "center"), strategy_path
+                = link_to image_tag("/img/icons/V2/64/SEO Training.png", class: "center"), strategy_path
     / /MAIN
   / /CANVAS
   / FOOTER

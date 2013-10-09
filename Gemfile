@@ -7,7 +7,7 @@ gem 'rails', '4.0.0'
 gem 'mysql2', group: :development
 gem 'figaro'
 gem 'better_errors', group: :development
-gem 'pg', group: :production
+# gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 gem 'devise', '3.0.0'
