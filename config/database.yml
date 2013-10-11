@@ -14,7 +14,7 @@ development:
   database: wildfyre_site_development
   pool: 5
   username: root
-  password: Millionby30
+  password: password
   host: localhost
 
 
